@@ -853,10 +853,10 @@ a:hover {
     height: 20px;
   }
   .content .list .item .price {
-    font-size: 10px;
+    font-size: 11px;
   }
   .content .list .item .old-price {
-    font-size: 8px;
+    font-size: 10px;
   }
   .content .list .item .name {
     font-size: 15px;
@@ -1116,10 +1116,10 @@ a:hover {
     height: 222px;
   }
   .categories ul {
-    gap: 30px;
+    gap: 20px;
   }
   .categories ul li {
-    font-size: 18px;
+    font-size: 18.5px;
   }
   .footer .returns p {
     font-size: 16px;
@@ -1133,14 +1133,17 @@ a:hover {
   .footer .m-width {
     max-width: 220px;
   }
+  .slider .item .name {
+    font-size: 16px;
+  }
   .section-title {
     margin-top: 37px;
   }
   .section-title h1 {
-    font-size: 20px;
+    font-size: 17px;
   }
   .section-title .more {
-    font-size: 18px;
+    font-size: 16px;
   }
   .content .list {
     gap: 15px;

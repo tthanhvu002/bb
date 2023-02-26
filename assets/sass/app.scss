@@ -924,10 +924,10 @@ a:hover {
           height: 20px;
         }
         .price {
-          font-size: 10px;
+          font-size: 11px;
         }
         .old-price {
-          font-size: 8px;
+          font-size: 10px;
         }
         .name {
           font-size: 15px;
@@ -1255,9 +1255,9 @@ a:hover {
   }
   .categories{
     ul{
-      gap: 30px;
+      gap: 20px;
       li{
-        font-size: 18px;
+        font-size: 18.5px;
       }
     }
   }
@@ -1284,13 +1284,20 @@ a:hover {
       max-width: 220px;
     }
   }
+  .slider{
+    .item{
+      .name{
+        font-size: 16px;
+      }
+    }
+  }
   .section-title {
     margin-top: 37px;
     h1 {
-      font-size: 20px;
+      font-size: 17px;
     }
     .more {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 
