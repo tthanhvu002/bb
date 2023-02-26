@@ -1074,5 +1074,10 @@ a:hover {
     max-width: 270px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1700px) {
+  .container-al {
+    padding: 0 7%;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
