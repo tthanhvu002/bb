@@ -579,6 +579,9 @@ a:hover {
 
 /* mobile */
 @media screen and (max-width: 767.98px) {
+  .container-al {
+    padding: 0 15px;
+  }
   .slider {
     margin-top: 16px;
   }
