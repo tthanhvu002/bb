@@ -726,7 +726,7 @@ a:hover {
       align-items: center;
       .sign-up-btn {
         width: 80px;
-        height: 20px;
+        height: 27px;
       }
       .sign-in-btn,
       .sign-up-btn {
@@ -739,7 +739,7 @@ a:hover {
       display: flex;
       gap: 3px;
       .text {
-        font-size: 5px;
+        font-size: 7px;
       }
       img {
         width: 10px;
@@ -749,13 +749,14 @@ a:hover {
 
     .select-language-btn {
       padding: 3px;
-      width: 80px;
+      width: 100px;
+      font-size: 7px;
       img {
         width: 16px;
         height: 16px;
       }
       .text {
-        font-size: 5px;
+        font-size: 7px;
         i {
           font-size: 5px;
         }
@@ -784,10 +785,12 @@ a:hover {
   .header {
     .container-al {
       flex-direction: column;
-      gap: 20px;
+      gap: 26px;
     }
     .search-bar {
       width: 100%;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
   .categories {

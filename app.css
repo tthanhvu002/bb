@@ -680,7 +680,7 @@ a:hover {
   }
   .header .btns-wrap .sign-up-btn {
     width: 80px;
-    height: 20px;
+    height: 27px;
   }
   .header .btns-wrap .sign-in-btn,
 .header .btns-wrap .sign-up-btn {
@@ -691,7 +691,7 @@ a:hover {
     gap: 3px;
   }
   .pre-header-contact .text {
-    font-size: 5px;
+    font-size: 7px;
   }
   .pre-header-contact img {
     width: 10px;
@@ -699,14 +699,15 @@ a:hover {
   }
   .pre-header .select-language-btn {
     padding: 3px;
-    width: 80px;
+    width: 100px;
+    font-size: 7px;
   }
   .pre-header .select-language-btn img {
     width: 16px;
     height: 16px;
   }
   .pre-header .select-language-btn .text {
-    font-size: 5px;
+    font-size: 7px;
   }
   .pre-header .select-language-btn .text i {
     font-size: 5px;
@@ -726,10 +727,12 @@ a:hover {
   }
   .header .container-al {
     flex-direction: column;
-    gap: 20px;
+    gap: 26px;
   }
   .header .search-bar {
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .categories .container-al ul {
     flex-wrap: wrap;
