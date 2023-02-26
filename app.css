@@ -201,13 +201,14 @@ a:hover {
   background: rgba(227, 243, 228, 0.78);
   border-radius: 8px;
   height: 56px;
-  width: 100%;
+  width: 90%;
   font-size: 16px;
   border: none;
   outline: none;
 }
 .header .search-bar .search-icon {
   width: 56px;
+  max-width: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -794,6 +795,9 @@ a:hover {
     font-size: 15px;
     margin-left: 38px;
   }
+  .banner-heading h1 {
+    line-height: 20px;
+  }
   .categories ul li {
     font-size: 15px;
   }
@@ -926,6 +930,13 @@ a:hover {
   .width-100 {
     width: 100% !important;
   }
+  .header .search-bar input {
+    height: 50px;
+  }
+  .header .search-bar .search-icon {
+    height: 50px;
+    max-width: 50px;
+  }
   .top-product .top-product-title p {
     font-size: 20px;
   }
@@ -934,6 +945,7 @@ a:hover {
     margin-top: 25px;
   }
   .section-title h1 {
+    line-height: 25px;
     font-size: 14px;
   }
   .section-title .more {
