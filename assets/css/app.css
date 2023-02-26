@@ -1109,6 +1109,9 @@ a:hover {
 }
 /* small-pc */
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .footer .returns i {
+    font-size: 10px;
+  }
   .logo-2 {
     width: 50px;
   }
