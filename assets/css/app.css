@@ -1049,8 +1049,11 @@ a:hover {
   .footer .flex-column {
     align-items: center;
   }
+  .footer .returns-link, .footer .returns-visit {
+    padding: 8px 15px;
+  }
   .footer .returns p {
-    font-size: 13px;
+    font-size: 12px;
   }
   .footer .container-al {
     display: flex;

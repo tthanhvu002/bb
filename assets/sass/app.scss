@@ -1161,12 +1161,20 @@ a:hover {
     }
   }
   .footer {
+    h2{
+
+    }
     .flex-column {
       align-items: center;
     }
+    .returns{
+      &-link, &-visit{
+        padding: 8px 15px;
+      }
+    }
     .returns {
       p {
-        font-size: 13px;
+        font-size: 12px;
       }
     }
     .container-al {
