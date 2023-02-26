@@ -36,6 +36,10 @@ img {
   padding: 0 8.8%;
 }
 
+.only-mobile {
+  display: none;
+}
+
 .section-title {
   background: rgb(255, 255, 255);
   background: linear-gradient(283deg, rgb(255, 255, 255) 34%, rgb(207, 232, 176) 77%);
@@ -136,10 +140,10 @@ a:hover {
 }
 .banner-heading {
   text-transform: uppercase;
-  font-size: 84px;
+  font-size: 4.3vw;
   color: #fff;
   font-weight: 700;
-  margin-left: 115px;
+  margin-left: 77px;
 }
 .banner .bamboo-left {
   position: absolute;
@@ -787,7 +791,7 @@ a:hover {
     } */
   }
   .banner-heading {
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 38px;
   }
   .categories ul li {
@@ -1018,8 +1022,7 @@ a:hover {
     } */
   }
   .banner-heading {
-    margin-left: 84px;
-    font-size: 33px;
+    margin-left: 58px;
   }
   .categories ul {
     gap: 8px;
@@ -1065,13 +1068,15 @@ a:hover {
 }
 
 /* large pc */
+@media screen and (min-width: 1600px) {
+  .banner-heading {
+    margin-left: 100px;
+  }
+}
 /* small-pc */
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
   .banner {
     height: 222px;
-  }
-  .banner-heading {
-    font-size: 41px;
   }
   .categories ul {
     gap: 30px;
@@ -1127,12 +1132,12 @@ a:hover {
   }
 }
 /* middle pc */
-@media screen and (min-width: 1400px) and (max-width: 1700px) {
+@media screen and (min-width: 1401px) and (max-width: 1700px) {
   .banner {
     height: 235px;
   }
   .banner-heading {
-    font-size: 63px;
+    /* font-size: 63px; */
   }
   .categories ul {
     gap: 32px;

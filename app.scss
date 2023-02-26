@@ -32,6 +32,9 @@ img {
 .container-al {
   padding: 0 8.8%;
 }
+.only-mobile{
+  display: none;
+}
 .section-title {
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -136,10 +139,11 @@ a:hover {
   align-items: center;
   &-heading {
     text-transform: uppercase;
-    font-size: 84px;
+    font-size: 4.3vw;
+  
     color: #fff;
     font-weight: 700;
-    margin-left: 115px;
+    margin-left: 77px;
   }
   .bamboo-left {
     position: absolute;
@@ -845,7 +849,7 @@ a:hover {
   .banner {
     height: 100px;
     &-heading {
-      font-size: 16px;
+      font-size: 15px;
       margin-left: 38px;
     }
     /* .bamboo-right {
@@ -1117,8 +1121,7 @@ a:hover {
   .banner {
     height: 175px;
     &-heading {
-      margin-left: 84px;
-      font-size: 33px;
+      margin-left: 58px;
     }
     /* .bamboo-right{
         left: 580px;
@@ -1186,13 +1189,19 @@ a:hover {
 
 /* large pc */
 @media screen and (min-width: 1600px) {
+  .banner{
+    &-heading{
+    margin-left: 100px;
+
+    }
+  }
 }
 /* small-pc */
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
   .banner {
     height: 222px;
     &-heading {
-      font-size: 41px;
+      //font-size: 41px;
     }
   }
   .categories{
@@ -1275,11 +1284,12 @@ a:hover {
 }
 
 /* middle pc */
-@media screen and (min-width: 1400px) and (max-width: 1700px) {
+
+@media screen and (min-width: 1401px) and (max-width: 1700px) {
   .banner{
     height: 235px;
     &-heading{
-      font-size: 63px;
+      /* font-size: 63px; */
     }
   }
   .content{
