@@ -583,6 +583,71 @@ a:hover {
   .container-al {
     padding: 0 15px;
   }
+  .header .btns-wrap {
+    display: none;
+  }
+  .btns-wrap.only-mobile {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 99;
+    padding: 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btns-wrap.only-mobile .sign-in-btn {
+    color: #727272;
+    font-size: 18px;
+  }
+  .btns-wrap.only-mobile .sign-up-btn {
+    padding: 10px;
+    background-color: #8bc63f;
+    font-size: 18px;
+    border-radius: 8px;
+    color: #fff;
+    width: 99px;
+    /* Primary/02 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #8bc63f;
+    border-radius: 8px;
+  }
+  .btns-wrap.only-mobile .cart-btn {
+    cursor: pointer;
+    position: relative;
+  }
+  .btns-wrap.only-mobile .cart-btn img {
+    width: 24px;
+  }
+  .btns-wrap.only-mobile .cart-btn::after {
+    position: absolute;
+    border-radius: 100%;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    top: -19px;
+    right: -16px;
+    content: "3";
+    font-size: 12px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btns-wrap.only-mobile .sign-up-btn {
+    width: 80px;
+    height: 27px;
+  }
+  .btns-wrap.only-mobile .sign-in-btn,
+.btns-wrap.only-mobile .sign-up-btn {
+    font-size: 14px;
+  }
   .slider {
     margin-top: 16px;
   }
@@ -594,7 +659,6 @@ a:hover {
   }
   .mobile-cate-btn {
     display: block;
-    margin-top: 20px;
   }
   .mobile-categories {
     display: block;
@@ -698,9 +762,12 @@ a:hover {
     width: 10px;
     font-size: 10px;
   }
+  .pre-header .wrapper {
+    position: relative;
+  }
   .pre-header .select-language-btn {
     padding: 3px;
-    width: 100px;
+    width: 90px;
     font-size: 7px;
   }
   .pre-header .select-language-btn img {
