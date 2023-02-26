@@ -1072,6 +1072,9 @@ a:hover {
   .banner-heading {
     margin-left: 100px;
   }
+  .section-title h1 {
+    font-size: 24px;
+  }
 }
 /* small-pc */
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
@@ -1079,7 +1082,7 @@ a:hover {
     height: 222px;
   }
   .categories ul {
-    gap: 30px;
+    gap: 40px;
   }
   .categories ul li {
     font-size: 16px;
@@ -1100,7 +1103,7 @@ a:hover {
     margin-top: 37px;
   }
   .section-title h1 {
-    font-size: 18px;
+    font-size: 20px;
   }
   .section-title .more {
     font-size: 18px;
@@ -1159,6 +1162,23 @@ a:hover {
 @media screen and (min-width: 1024px) and (max-width: 1700px) {
   .container-al {
     padding: 0 5%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1025px) {
+  .footer-text {
+    font-size: 12px;
+  }
+  .footer h2 {
+    font-size: 14px;
+  }
+  .content .list .item .name {
+    font-size: 13px;
+  }
+  .content .list .item .old-price {
+    font-size: 10px;
+  }
+  .content .list .item .price {
+    font-size: 12px;
   }
 }
 
