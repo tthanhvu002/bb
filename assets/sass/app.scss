@@ -1221,6 +1221,9 @@ a:hover {
 }
 /* small-pc */
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .logo-2{
+    width: 50px;
+  }
   .banner {
     height: 222px;
     &-heading {
@@ -1229,9 +1232,9 @@ a:hover {
   }
   .categories{
     ul{
-      gap: 40px;
+      gap: 30px;
       li{
-        font-size: 16px;
+        font-size: 18px;
       }
     }
   }
@@ -1355,11 +1358,20 @@ a:hover {
   }
 }
 
-
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  .categories{
+    ul{
+      gap: 40px;
+    li{
+      font-size: 18px;
+    }
+    }
+  }
+}
 @media screen and (min-width: 1024px) and (max-width: 1025px){
 .footer{
   &-text{
-    font-size: 12px;
+    font-size: 12px !important;
   }
   h2{
     font-size: 14px;
