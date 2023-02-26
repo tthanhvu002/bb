@@ -551,6 +551,7 @@ a:hover {
   flex: none;
 }
 .slider .item .name {
+  margin-top: 14px;
   text-align: center;
   font-weight: 600;
   font-size: 20px;
@@ -989,6 +990,8 @@ a:hover {
   flex: 1;
 }
 
+/* large pc */
+/* small-pc */
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .banner-heading {
     font-size: 45px;
@@ -1008,8 +1011,8 @@ a:hover {
   .footer .returns-visit .text, .footer .returns-link .text {
     font-size: 11px;
   }
-  .footer .footer-text {
-    max-width: 200px;
+  .footer .m-width {
+    max-width: 220px;
   }
   .section-title {
     margin-top: 37px;
@@ -1036,11 +1039,18 @@ a:hover {
   .content .list .item .old-price {
     font-size: 12px;
   }
+  .top-product-list {
+    gap: 10px;
+  }
+  .footer .logo-list {
+    gap: 25px;
+  }
   .footer .logo-list img {
     width: 50px;
   }
 }
-@media screen and (min-width: 1440px) and (max-width: 1700px) {
+/* middle pc */
+@media screen and (min-width: 1400px) and (max-width: 1700px) {
   .banner {
     height: 235px;
   }
@@ -1049,6 +1059,19 @@ a:hover {
   }
   .categories ul {
     gap: 32px;
+  }
+  .content .list {
+    gap: 15px;
+  }
+  .content .list .item {
+    position: relative;
+    width: calc(25% - 15px);
+  }
+  .footer .logo-list {
+    gap: 15px;
+  }
+  .footer .m-width {
+    max-width: 270px;
   }
 }
 

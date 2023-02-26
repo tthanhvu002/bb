@@ -577,6 +577,7 @@ a:hover {
     width: 20%;
     flex: none;
     .name {
+      margin-top: 14px;
       text-align: center;
       font-weight: 600;
       font-size: 20px;
@@ -1099,9 +1100,11 @@ a:hover {
   width: 100%;
   flex: 1;
 }
-//small pc
+
+/* large pc */
 @media screen and (min-width: 1600px) {
 }
+/* small-pc */
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .banner {
     &-heading {
@@ -1134,7 +1137,9 @@ a:hover {
     .left {
     }
     .footer-text {
-      max-width: 200px;
+    }
+    .m-width{
+      max-width: 220px;
     }
   }
   .section-title {
@@ -1172,9 +1177,12 @@ a:hover {
       }
     }
   }
-
+  .top-product-list{
+    gap: 10px;
+  }
   .footer {
     .logo-list {
+      gap: 25px;
       img {
         width: 50px;
       }
@@ -1182,8 +1190,8 @@ a:hover {
   }
 }
 
-
-@media screen and (min-width: 1440px) and (max-width: 1700px) {
+/* middle pc */
+@media screen and (min-width: 1400px) and (max-width: 1700px) {
   .banner{
     height: 235px;
     &-heading{
@@ -1193,6 +1201,25 @@ a:hover {
   .categories{
     ul{
       gap: 32px;
+    }
+  }
+  .content {
+    .list {
+      gap: 15px;
+
+      .item {
+        position: relative;
+
+        width: calc(25% - 15px);
+      }
+    }
+  }
+  .footer{
+    .logo-list{
+      gap: 15px;
+    }
+    .m-width{
+      max-width: 270px;
     }
   }
 }
