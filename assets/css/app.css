@@ -1038,7 +1038,7 @@ a:hover {
     margin-left: 58px;
   }
   .categories ul {
-    gap: 8px;
+    gap: 18px;
   }
   .categories ul li {
     font-size: 12px;
@@ -1145,6 +1145,9 @@ a:hover {
   }
   .top-product-list {
     gap: 10px;
+  }
+  .top-product-list p {
+    font-size: 12px;
   }
   .footer .logo-list {
     gap: 25px;
