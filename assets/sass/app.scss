@@ -407,6 +407,7 @@ a:hover {
     p {
       font-size: 14px;
       text-align: center;
+      font-weight: 500;
     }
   }
 }
@@ -1041,10 +1042,21 @@ a:hover {
     margin-top: 25px;
     h1 {
       line-height: 25px;
-      font-size: 14px;
+      font-size: 12px;
     }
     .more {
-      font-size: 14px;
+      font-size: 12px;
+    }
+  }
+  .categories {
+    ul {
+      gap: 18px;
+      li {
+        font-size: 13px;
+      }
+      .dropdown{
+        gap: 6px;
+      }
     }
   }
   .header {
@@ -1094,9 +1106,17 @@ a:hover {
   .categories {
     padding: 18px 0;
   }
+  .container-al{
+    padding: 0 7%;
+  }
   .slider {
     margin-top: 25px;
     margin-bottom: 50px;
+    .item{
+      .name{
+        font-size: 12px;
+      }
+    } 
   }
   .content {
     .list {
@@ -1117,13 +1137,13 @@ a:hover {
           height: 29px;
         }
         .price {
-          font-size: 12px;
-        }
-        .old-price {
           font-size: 10px;
         }
+        .old-price {
+          font-size: 9px;
+        }
         .name {
-          font-size: 15px;
+          font-size: 11px;
         }
       }
     }
@@ -1145,21 +1165,8 @@ a:hover {
         left: 580px;
     } */
   }
-  .categories {
-    ul {
-      gap: 18px;
-      li {
-        font-size: 13px;
-      }
-    }
-  }
-  .slider {
-    .item {
-      .name {
-        font-size: 14px;
-      }
-    }
-  }
+  
+ 
   .footer {
     h2{
 
@@ -1169,6 +1176,9 @@ a:hover {
     }
     .returns{
       &-link, &-visit{
+        i{
+          font-size: 8px;
+        }
         padding: 8px 15px;
       }
     }
@@ -1197,9 +1207,14 @@ a:hover {
 
 @media screen and (max-width: 1023.98px) {
   .top-product-list {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow: scroll;
     .top-product-item {
       width: 20%;
+      flex: none;
+    }
+    &::-webkit-scrollbar{
+      display: none;
     }
   }
 }

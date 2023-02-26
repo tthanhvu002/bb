@@ -391,6 +391,7 @@ a:hover {
 .top-product-list p {
   font-size: 14px;
   text-align: center;
+  font-weight: 500;
 }
 
 .footer {
@@ -947,10 +948,19 @@ a:hover {
   }
   .section-title h1 {
     line-height: 25px;
-    font-size: 14px;
+    font-size: 12px;
   }
   .section-title .more {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .categories ul {
+    gap: 18px;
+  }
+  .categories ul li {
+    font-size: 13px;
+  }
+  .categories ul .dropdown {
+    gap: 6px;
   }
   .header .btns-wrap {
     gap: 18px;
@@ -989,9 +999,15 @@ a:hover {
   .categories {
     padding: 18px 0;
   }
+  .container-al {
+    padding: 0 7%;
+  }
   .slider {
     margin-top: 25px;
     margin-bottom: 50px;
+  }
+  .slider .item .name {
+    font-size: 12px;
   }
   .content .list {
     margin-bottom: 50px;
@@ -1013,13 +1029,13 @@ a:hover {
     height: 29px;
   }
   .content .list .item .price {
-    font-size: 12px;
-  }
-  .content .list .item .old-price {
     font-size: 10px;
   }
+  .content .list .item .old-price {
+    font-size: 9px;
+  }
   .content .list .item .name {
-    font-size: 15px;
+    font-size: 11px;
   }
   .top-product-list {
     flex-wrap: wrap;
@@ -1037,20 +1053,14 @@ a:hover {
   .banner-heading {
     margin-left: 58px;
   }
-  .categories ul {
-    gap: 18px;
-  }
-  .categories ul li {
-    font-size: 13px;
-  }
-  .slider .item .name {
-    font-size: 14px;
-  }
   .footer .flex-column {
     align-items: center;
   }
   .footer .returns-link, .footer .returns-visit {
     padding: 8px 15px;
+  }
+  .footer .returns-link i, .footer .returns-visit i {
+    font-size: 8px;
   }
   .footer .returns p {
     font-size: 12px;
@@ -1072,10 +1082,15 @@ a:hover {
 /* mobile & tablet */
 @media screen and (max-width: 1023.98px) {
   .top-product-list {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow: scroll;
   }
   .top-product-list .top-product-item {
     width: 20%;
+    flex: none;
+  }
+  .top-product-list::-webkit-scrollbar {
+    display: none;
   }
 }
 .item.only-pc {
