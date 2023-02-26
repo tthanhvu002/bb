@@ -276,6 +276,7 @@ a:hover {
     align-items: center;
     gap: 68px;
     li {
+      white-space: nowrap;
       font-weight: 500;
       font-size: 22px;
       line-height: 24px;
@@ -1111,10 +1112,11 @@ a:hover {
 @media screen and (min-width: 1600px) {
 }
 /* small-pc */
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
   .banner {
+    height: 222px;
     &-heading {
-      font-size: 45px;
+      font-size: 41px;
     }
   }
   .categories{
@@ -1171,7 +1173,7 @@ a:hover {
         .sale {
         }
         .name {
-          font-size: 18px;
+          font-size: 16px;
         }
         .price {
           font-size: 16px;
@@ -1202,6 +1204,14 @@ a:hover {
     height: 235px;
     &-heading{
       font-size: 63px;
+    }
+  }
+  .content{
+    .list{
+      .item{
+        .price{
+        }
+      }
     }
   }
   .categories{

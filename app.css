@@ -271,6 +271,7 @@ a:hover {
   gap: 68px;
 }
 .categories ul li {
+  white-space: nowrap;
   font-weight: 500;
   font-size: 22px;
   line-height: 24px;
@@ -998,9 +999,12 @@ a:hover {
 
 /* large pc */
 /* small-pc */
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .banner {
+    height: 222px;
+  }
   .banner-heading {
-    font-size: 45px;
+    font-size: 41px;
   }
   .categories ul {
     gap: 30px;
@@ -1037,7 +1041,7 @@ a:hover {
     width: calc(20% - 15px);
   }
   .content .list .item .name {
-    font-size: 18px;
+    font-size: 16px;
   }
   .content .list .item .price {
     font-size: 16px;
