@@ -46,7 +46,7 @@ mobileCateBtn.onclick = () => {
 }
 
 
-const items = document.querySelectorAll('.list .item:nth-child(4n)')
+const items = document.querySelectorAll('.list .item:nth-child(5n)')
 items.forEach(item => {
   item.classList.add('width-100')
 })

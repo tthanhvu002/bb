@@ -1001,7 +1001,7 @@ a:hover {
     justify-content: space-between;
   }
   .content .list .item {
-    width: calc(32% - 10px);
+    width: calc(25% - 10px);
   }
   .content .list .item img {
     max-height: 400px;
