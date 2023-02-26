@@ -1034,7 +1034,7 @@ a:hover {
   }
   .content .list .item {
     position: relative;
-    width: calc(25% - 15px);
+    width: calc(20% - 15px);
   }
   .content .list .item .name {
     font-size: 18px;
@@ -1071,7 +1071,7 @@ a:hover {
   }
   .content .list .item {
     position: relative;
-    width: calc(25% - 15px);
+    width: calc(20% - 15px);
   }
   .footer .logo-list {
     gap: 15px;
