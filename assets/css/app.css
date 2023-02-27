@@ -1099,6 +1099,21 @@ a:hover {
   .pre-header {
     padding: 5px 0;
   }
+  .select-language-btn {
+    width: 180px;
+  }
+  .select-language-btn img {
+    width: 20px;
+  }
+  .select-language-btn .text {
+    font-size: 14px;
+  }
+  .content .list .item .name {
+    margin-top: 6px;
+  }
+  .content .list .item .prices {
+    margin-top: 0px;
+  }
   .slider .item .name {
     margin-top: 2px;
   }

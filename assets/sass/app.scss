@@ -1227,6 +1227,27 @@ a:hover {
   .pre-header{
     padding: 5px 0;
   }
+  .select-language-btn{
+    width: 180px;
+    img{
+      width: 20px;
+    }
+    .text{
+      font-size: 14px;
+    }
+  }
+  .content{
+    .list{
+      .item{
+        .name{
+          margin-top: 6px;
+        }
+        .prices{
+          margin-top: 0px;
+        }
+      }
+    }
+  }
   .slider{
     .item{
       .name{
