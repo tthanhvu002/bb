@@ -798,14 +798,16 @@ a:hover {
               transition: 0.2s ease;
               
             }
-            .lv2-dropdown{
-              &:hover{
-                .lv-2-sub-dropdown{
-                  
-                }
-              }
-            }
+            
           }
+          .lv2-sub-dropdown{
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.2s ease;
+            &.active{
+              max-height: 200px;
+            }
+          } 
           li {
             font-weight: 400;
             font-size: 10px;

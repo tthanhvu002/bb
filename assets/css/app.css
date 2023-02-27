@@ -752,6 +752,14 @@ a:hover {
     overflow: hidden;
     transition: 0.2s ease;
   }
+  .mobile-categories .mobile-categories-list .dropdown .sub-dropdown .lv2-sub-dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s ease;
+  }
+  .mobile-categories .mobile-categories-list .dropdown .sub-dropdown .lv2-sub-dropdown.active {
+    max-height: 200px;
+  }
   .mobile-categories .mobile-categories-list .dropdown .sub-dropdown li {
     font-weight: 400;
     font-size: 10px;

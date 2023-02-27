@@ -1,75 +1,76 @@
-const slider = document.querySelector('.slider')
-const nextBtn = document.querySelector('.next-btn')
-const prevBtn = document.querySelector('.prev-btn')
-const width = document.querySelector('.slider .item').offsetWidth
-let i =0
+const slider = document.querySelector(".slider");
+const nextBtn = document.querySelector(".next-btn");
+const prevBtn = document.querySelector(".prev-btn");
+const width = document.querySelector(".slider .item").offsetWidth;
+let i = 0;
 slider.onscroll = () => {
-  console.log(slider.scrollLeft);
-  setColorBtn()
-}
+  setColorBtn();
+};
 nextBtn.onclick = () => {
-  slider.scrollLeft += width
-  setColorBtn()
-}
+  slider.scrollLeft += width;
+  setColorBtn();
+};
 prevBtn.onclick = () => {
-  
-  slider.scrollLeft -= width
-  setColorBtn()
-}
+  slider.scrollLeft -= width;
+  setColorBtn();
+};
 
-approxeq = function(v1, v2, epsilon) {
+approxeq = function (v1, v2, epsilon) {
   if (epsilon == null) {
     epsilon = 3;
   }
   return Math.abs(v1 - v2) < epsilon;
 };
 
-function setColorBtn(){
-  if(slider.scrollLeft == 0){
-    prevBtn.classList.add('inactive')
-    nextBtn.classList.remove('inactive')
-  } else if( approxeq( slider.scrollLeft,slider.scrollWidth - slider.offsetWidth )  ){
-    nextBtn.classList.add('inactive')
-
-  } else{
-    prevBtn.classList.remove('inactive')
-
-
+function setColorBtn() {
+  if (slider.scrollLeft == 0) {
+    prevBtn.classList.add("inactive");
+    nextBtn.classList.remove("inactive");
+  } else if (
+    approxeq(slider.scrollLeft, slider.scrollWidth - slider.offsetWidth)
+  ) {
+    nextBtn.classList.add("inactive");
+  } else {
+    prevBtn.classList.remove("inactive");
   }
 }
-setColorBtn()
+setColorBtn();
 
-const mobileCateBtn = document.querySelector('.mobile-cate-btn')
-const mobileCate = document.querySelector('.mobile-categories')
+const mobileCateBtn = document.querySelector(".mobile-cate-btn");
+const mobileCate = document.querySelector(".mobile-categories");
 mobileCateBtn.onclick = (e) => {
-  mobileCate.classList.toggle('active')
- 
-}
+  mobileCate.classList.toggle("active");
+};
 
 /* mobileCate.onclick = () => {
   mobileCate.classList.add('active')
 } */
 
+const items = document.querySelectorAll(".list .item:nth-child(5n)");
+items.forEach((item) => {
+  item.classList.add("width-100");
+});
 
-const items = document.querySelectorAll('.list .item:nth-child(5n)')
-items.forEach(item => {
-  item.classList.add('width-100')
-})
+const mobileDropdown = document.querySelectorAll(
+  ".mobile-categories ul .dropdown"
+);
 
-const mobileDropdown = document.querySelectorAll('.mobile-categories ul .dropdown')
-console.log(mobileDropdown);
+mobileDropdown.forEach((item) => {
+  item.onclick = (e) => {
+    e.stopPropagation()
+    item.querySelector(".sub-dropdown").classList.toggle("active");
+    
+  };
+});
 
-mobileDropdown.forEach(item => {
-  item.onclick = () => {
-    item.querySelector('.sub-dropdown').classList.toggle('active')
-    console.log(item.querySelector('.sub-dropdown'));
-  }
-})
+const mobileSubDropdown = document.querySelectorAll(
+  ".mobile-categories  .lv2-dropdown"
+);
 
-const mobileSubDropdown = document.querySelectorAll('.mobile-categories  .lv2-dropdown')
+mobileSubDropdown.forEach((item) => {
+  item.onclick = (e) => {
 
-mobileSubDropdown.forEach(item => {
-  item.onclick =() => {
-    item.querySelector('.lv2-sup-dropdown').classList.toggle('active')
-  }
-})
+    e.stopPropagation()
+    item.querySelector('.lv2-sub-dropdown').classList.toggle('active')
+  };
+});
