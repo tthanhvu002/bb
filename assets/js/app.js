@@ -41,9 +41,14 @@ setColorBtn()
 
 const mobileCateBtn = document.querySelector('.mobile-cate-btn')
 const mobileCate = document.querySelector('.mobile-categories')
-mobileCateBtn.onclick = () => {
+mobileCateBtn.onclick = (e) => {
   mobileCate.classList.toggle('active')
+ 
 }
+
+/* mobileCate.onclick = () => {
+  mobileCate.classList.add('active')
+} */
 
 
 const items = document.querySelectorAll('.list .item:nth-child(5n)')

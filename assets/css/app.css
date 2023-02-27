@@ -678,15 +678,15 @@ a:hover {
     visibility: hidden;
     top: -379px;
     z-index: 99;
+    left: -3%;
     transition: 0.2s ease-in-out;
   }
   .mobile-categories.active {
     visibility: visible;
     opacity: 1;
-    width: 200px;
   }
   .mobile-categories ul {
-    top: -20px;
+    top: -40px;
     position: absolute;
     visibility: unset;
     display: flex;
@@ -810,8 +810,11 @@ a:hover {
     font-size: 15px;
   }
   .header .container-al {
-    flex-direction: column;
-    gap: 26px;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .header .logo {
+    width: 50px;
   }
   .header .search-bar {
     width: 100%;
@@ -858,10 +861,16 @@ a:hover {
     width: 32px;
     height: 20px;
   }
+  .content .list .item .prices {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
   .content .list .item .price {
+    line-height: 20px;
     font-size: 12px;
   }
   .content .list .item .old-price {
+    line-height: 15px;
     font-size: 12px;
   }
   .content .list .item .name {

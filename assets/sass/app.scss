@@ -33,7 +33,7 @@ img {
 .container-al {
   padding: 0 8.8%;
 }
-.only-mobile{
+.only-mobile {
   display: none;
 }
 .section-title {
@@ -141,7 +141,7 @@ a:hover {
   &-heading {
     text-transform: uppercase;
     font-size: 4.3vw;
-  
+
     color: #fff;
     font-weight: 700;
     margin-left: 77px;
@@ -210,7 +210,8 @@ a:hover {
     }
 
     .search-icon {
-     width: 56px; max-width: 56px;
+      width: 56px;
+      max-width: 56px;
 
       display: flex;
       align-items: center;
@@ -481,7 +482,7 @@ a:hover {
       font-size: 16px;
       font-weight: 600;
     }
-    
+
     &-link,
     &-visit {
       display: flex;
@@ -491,7 +492,7 @@ a:hover {
       align-items: center;
       font-size: 18px;
       gap: 4px;
-      i{
+      i {
         font-size: 15px;
       }
     }
@@ -622,18 +623,14 @@ a:hover {
 /* mobile */
 
 @media screen and (max-width: 767.98px) {
-
-  .container-al{
+  .container-al {
     padding: 0 15px;
   }
 
-  .header{
-    .btns-wrap{
+  .header {
+    .btns-wrap {
       display: none;
     }
-
-
-    
   }
   .btns-wrap.only-mobile {
     display: flex;
@@ -690,16 +687,16 @@ a:hover {
       align-items: center;
     }
     align-items: center;
-      .sign-up-btn {
-        width: 80px;
-        height: 27px;
-      }
-      .sign-in-btn,
-      .sign-up-btn {
-        font-size: 14px;
-      }
+    .sign-up-btn {
+      width: 80px;
+      height: 27px;
+    }
+    .sign-in-btn,
+    .sign-up-btn {
+      font-size: 14px;
+    }
   }
- 
+
   .slider {
     margin-top: 16px;
   }
@@ -717,7 +714,7 @@ a:hover {
       }
     }
   }
- 
+
   .mobile-cate-btn {
     display: block;
   }
@@ -728,16 +725,16 @@ a:hover {
     visibility: hidden;
     top: -379px;
     z-index: 99;
-
+    left: -3%;
     transition: 0.2s ease-in-out;
     &.active {
       visibility: visible;
       opacity: 1;
-      
-    width: 200px;
+
     }
     ul {
-      top: -20px;
+
+      top: -40px;
       position: absolute;
       visibility: unset;
       display: flex;
@@ -837,9 +834,9 @@ a:hover {
         font-size: 10px;
       }
     }
-.wrapper{
-  position: relative;
-}
+    .wrapper {
+      position: relative;
+    }
     .select-language-btn {
       padding: 3px;
       width: 90px;
@@ -863,7 +860,7 @@ a:hover {
     &-heading {
       font-size: 15px;
       margin-left: 38px;
-      h1{
+      h1 {
         line-height: 20px;
       }
     }
@@ -880,8 +877,11 @@ a:hover {
   }
   .header {
     .container-al {
-      flex-direction: column;
-      gap: 26px;
+      flex-direction: row;
+      gap: 15px;
+    }
+    .logo {
+      width: 50px;
     }
     .search-bar {
       width: 100%;
@@ -932,10 +932,16 @@ a:hover {
           width: 32px;
           height: 20px;
         }
+        .prices {
+          flex-wrap: wrap;
+          gap: 5px;
+        }
         .price {
+          line-height: 20px;
           font-size: 12px;
         }
         .old-price {
+          line-height: 15px;
           font-size: 12px;
         }
         .name {
@@ -1030,12 +1036,12 @@ a:hover {
     width: 100% !important;
   }
 
-  .header{
-    .search-bar{
-      input{
+  .header {
+    .search-bar {
+      input {
         height: 50px;
       }
-      .search-icon{
+      .search-icon {
         height: 50px;
         max-width: 50px;
       }
@@ -1065,7 +1071,7 @@ a:hover {
       li {
         font-size: 13px;
       }
-      .dropdown{
+      .dropdown {
         gap: 6px;
       }
     }
@@ -1117,17 +1123,17 @@ a:hover {
   .categories {
     padding: 18px 0;
   }
-  .container-al{
+  .container-al {
     padding: 0 7%;
   }
   .slider {
     margin-top: 25px;
     margin-bottom: 50px;
-    .item{
-      .name{
+    .item {
+      .name {
         font-size: 12px;
       }
-    } 
+    }
   }
   .content {
     .list {
@@ -1176,18 +1182,17 @@ a:hover {
         left: 580px;
     } */
   }
-  
- 
-  .footer {
-    h2{
 
+  .footer {
+    h2 {
     }
     .flex-column {
       align-items: center;
     }
-    .returns{
-      &-link, &-visit{
-        i{
+    .returns {
+      &-link,
+      &-visit {
+        i {
           font-size: 8px;
         }
         padding: 8px 15px;
@@ -1208,12 +1213,12 @@ a:hover {
         width: 100%;
       }
     }
-    .logo-list{
-      img{
+    .logo-list {
+      img {
         width: 50px;
       }
     }
-    .logo-2{
+    .logo-2 {
       width: 50px;
     }
     .footer-text {
@@ -1225,34 +1230,34 @@ a:hover {
 /* mobile & tablet */
 
 @media screen and (max-width: 768px) {
-  .pre-header{
+  .pre-header {
     padding: 5px 0;
   }
-  .select-language-btn{
+  .select-language-btn {
     width: 180px;
-    img{
+    img {
       width: 20px;
     }
-    .text{
+    .text {
       font-size: 14px;
     }
   }
-  .content{
-    .list{
-      .item{
-        .name{
+  .content {
+    .list {
+      .item {
+        .name {
           margin-top: 6px;
           line-height: unset;
         }
-        .prices{
+        .prices {
           margin-top: 0px;
         }
       }
     }
   }
-  .slider{
-    .item{
-      .name{
+  .slider {
+    .item {
+      .name {
         margin-top: 2px;
       }
     }
@@ -1264,7 +1269,7 @@ a:hover {
       width: 20%;
       flex: none;
     }
-    &::-webkit-scrollbar{
+    &::-webkit-scrollbar {
       display: none;
     }
   }
@@ -1281,40 +1286,38 @@ a:hover {
 
 /* large pc */
 @media screen and (min-width: 1600px) {
-  .banner{
-    &-heading{
-    margin-left: 100px;
-
+  .banner {
+    &-heading {
+      margin-left: 100px;
     }
   }
-  .section-title{
-    h1{
+  .section-title {
+    h1 {
       font-size: 22px;
     }
   }
 }
 /* small-pc */
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
-  .top-product{
-    &-title{
-      p{
+  .top-product {
+    &-title {
+      p {
         font-size: 23px;
       }
-      img{
+      img {
         width: 27px;
         height: 27px;
       }
     }
   }
-  .footer{
-    .returns{
-      i{
+  .footer {
+    .returns {
+      i {
         font-size: 10px;
       }
     }
-    
   }
-  .logo-2{
+  .logo-2 {
     width: 50px;
   }
   .banner {
@@ -1323,10 +1326,10 @@ a:hover {
       //font-size: 41px;
     }
   }
-  .categories{
-    ul{
+  .categories {
+    ul {
       gap: 20px;
-      li{
+      li {
         font-size: 18.5px;
       }
     }
@@ -1350,13 +1353,13 @@ a:hover {
     }
     .footer-text {
     }
-    .m-width{
+    .m-width {
       max-width: 220px;
     }
   }
-  .slider{
-    .item{
-      .name{
+  .slider {
+    .item {
+      .name {
         font-size: 16px;
       }
     }
@@ -1371,8 +1374,6 @@ a:hover {
       font-size: 16px;
     }
   }
-
-
 
   .content {
     .list {
@@ -1397,9 +1398,9 @@ a:hover {
       }
     }
   }
-  .top-product-list{
+  .top-product-list {
     gap: 10px;
-    p{
+    p {
       font-size: 12px;
     }
   }
@@ -1416,29 +1417,30 @@ a:hover {
 /* middle pc */
 
 @media screen and (min-width: 1401px) and (max-width: 1700px) {
-  .banner{
+  .banner {
     height: 235px;
-    &-heading{
+    &-heading {
       /* font-size: 63px; */
     }
   }
-  .returns{
-    &-link, &-visit{
-      i{
+  .returns {
+    &-link,
+    &-visit {
+      i {
         font-size: 14px;
       }
     }
   }
-  .content{
-    .list{
-      .item{
-        .price{
+  .content {
+    .list {
+      .item {
+        .price {
         }
       }
     }
   }
-  .categories{
-    ul{
+  .categories {
+    ul {
       gap: 32px;
     }
   }
@@ -1453,86 +1455,85 @@ a:hover {
       }
     }
   }
-  .footer{
-    .logo-list{
+  .footer {
+    .logo-list {
       gap: 15px;
     }
-    .m-width{
+    .m-width {
       max-width: 270px;
     }
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1700px) {
-  .container-al{
+  .container-al {
     padding: 0 5%;
   }
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
-  .categories{
-    ul{
+  .categories {
+    ul {
       gap: 40px;
-    li{
-      font-size: 20px;
-    }
+      li {
+        font-size: 20px;
+      }
     }
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1025px){
-  
-  .top-product{
-    &-title{
-      p{
+@media screen and (min-width: 1024px) and (max-width: 1025px) {
+  .top-product {
+    &-title {
+      p {
         font-size: 21px;
       }
-      img{
+      img {
         height: 25px;
         width: 25px;
       }
     }
   }
-  .section-title{
+  .section-title {
     padding: 12px 14px;
   }
-.footer{
-  &-text{
-
-    font-size: 12px !important;
-  }
-  .returns{
-    &-link, &-visit{
-      .text{
-        font-size: 13px;
+  .footer {
+    &-text {
+      font-size: 12px !important;
+    }
+    .returns {
+      &-link,
+      &-visit {
+        .text {
+          font-size: 13px;
+        }
+      }
+    }
+    h2 {
+      font-size: 14px;
+    }
+    .logo-2 {
+      width: 50px;
+    }
+    .logo-list {
+      img {
+        width: 50px;
       }
     }
   }
-  h2{
-    font-size: 14px;
-  }
-  .logo-2{
-    width: 50px;
-  }
-  .logo-list{
-   img{
-    width: 50px;
-   } 
-  }
-}
 
-.content{
-  .list{
-    .item{
-      .name{
-        font-size: 13px;
-      }
-      .old-price{
-        font-size: 10px;
-      }
-      .price{
-        font-size: 12px;
+  .content {
+    .list {
+      .item {
+        .name {
+          font-size: 13px;
+        }
+        .old-price {
+          font-size: 10px;
+        }
+        .price {
+          font-size: 12px;
+        }
       }
     }
   }
-}
 }
