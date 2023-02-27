@@ -678,7 +678,7 @@ a:hover {
     visibility: hidden;
     top: -379px;
     z-index: 99;
-    left: -3%;
+    left: -4%;
     transition: 0.2s ease-in-out;
   }
   .mobile-categories.active {
@@ -686,7 +686,8 @@ a:hover {
     opacity: 1;
   }
   .mobile-categories ul {
-    top: -40px;
+    top: -42vh;
+    height: 93vh;
     position: absolute;
     visibility: unset;
     display: flex;
