@@ -14,6 +14,7 @@ p {
 }
 
 a {
+  display: block;
   text-decoration: none;
   color: #fff;
 }
@@ -1110,6 +1111,7 @@ a:hover {
   }
   .content .list .item .name {
     margin-top: 6px;
+    line-height: unset;
   }
   .content .list .item .prices {
     margin-top: 0px;
