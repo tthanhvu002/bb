@@ -674,6 +674,7 @@ a:hover {
   }
   .mobile-categories {
     display: block;
+    overflow: scroll;
     position: fixed;
     opacity: 0;
     visibility: hidden;
@@ -692,6 +693,7 @@ a:hover {
     top: 0vh;
     height: 94vh;
     left: 0vw;
+    overflow: scroll;
     position: fixed;
     visibility: unset;
     display: flex;
@@ -709,32 +711,46 @@ a:hover {
   }
   .mobile-categories .mobile-categories-list .dropdown {
     display: flex;
-    align-items: center;
-    gap: 8px;
+    flex-direction: column;
     cursor: pointer;
     z-index: 99;
+  }
+  .mobile-categories .mobile-categories-list .dropdown span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
   }
   .mobile-categories .mobile-categories-list .dropdown i {
     font-size: 8px;
     color: #959ead;
   }
   .mobile-categories .mobile-categories-list .dropdown .sub-dropdown {
-    height: 0;
-    overflow: hidden;
+    position: relative;
     display: flex;
-    opacity: 0;
     border-radius: 8px;
+    max-height: 0;
+    overflow: hidden;
     flex-direction: column;
+    transition: 0.2s;
     font-weight: 400;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    visibility: hidden;
     gap: 10px;
     transition: 0.2s ease;
   }
   .mobile-categories .mobile-categories-list .dropdown .sub-dropdown.active {
-    height: auto;
-    opacity: 1;
     visibility: visible;
+    overflow: auto;
+    max-height: 200px;
+  }
+  .mobile-categories .mobile-categories-list .dropdown .sub-dropdown .dropdown span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .mobile-categories .mobile-categories-list .dropdown .sub-dropdown .dropdown .lv2-dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s ease;
   }
   .mobile-categories .mobile-categories-list .dropdown .sub-dropdown li {
     font-weight: 400;
@@ -1130,6 +1146,10 @@ a:hover {
     height: 40px;
     width: 40px;
     object-fit: contain;
+  }
+  .footer .logo-2 {
+    width: 40px;
+    height: 40px;
   }
   .content .list .item .name {
     margin-top: 6px;

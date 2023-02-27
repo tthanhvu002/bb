@@ -721,6 +721,7 @@ a:hover {
   }
   .mobile-categories {
     display: block;
+    overflow: scroll;
     position: fixed;
     opacity: 0;
     visibility: hidden;
@@ -738,7 +739,7 @@ a:hover {
       top: 0vh;
       height: 94vh;
       left: 0vw;
-
+      overflow: scroll;
       position: fixed;
       visibility: unset;
       display: flex;
@@ -755,32 +756,55 @@ a:hover {
       }
       .dropdown {
         display: flex;
-        align-items: center;
-        gap: 8px;
-       
+        flex-direction: column;
         cursor: pointer;
         z-index: 99;
+        span {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+        }
         i {
           font-size: 8px;
           color: #959ead;
         }
         .sub-dropdown {
-          
-          height: 0;
-          overflow: hidden;
+          position: relative;
           display: flex;
-          opacity: 0;
           border-radius: 8px;
+          max-height: 0;
+          overflow: hidden;
           flex-direction: column;
+          transition: 0.2s;
           font-weight: 400;
-          background-color: #fff;
-          border: 1px solid #ccc;
+          visibility: hidden;
           gap: 10px;
           transition: 0.2s ease;
-          &.active{
-            height: auto;
-            opacity: 1;
+          &.active {
             visibility: visible;
+            overflow: auto;
+            max-height: 200px;
+          }
+
+          .dropdown {
+            span {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+            }
+            .lv2-dropdown {
+              max-height: 0;
+              overflow: hidden;
+              transition: 0.2s ease;
+              
+            }
+            .lv2-dropdown{
+              &:hover{
+                .lv-2-sub-dropdown{
+                  
+                }
+              }
+            }
           }
           li {
             font-weight: 400;
@@ -792,9 +816,6 @@ a:hover {
           }
         }
       }
-
-      
-      
     }
   }
   .categories {
@@ -1253,6 +1274,10 @@ a:hover {
         width: 40px;
         object-fit: contain;
       }
+    }
+    .logo-2 {
+      width: 40px;
+      height: 40px;
     }
   }
   .content {

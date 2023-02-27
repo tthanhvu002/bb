@@ -65,3 +65,11 @@ mobileDropdown.forEach(item => {
     console.log(item.querySelector('.sub-dropdown'));
   }
 })
+
+const mobileSubDropdown = document.querySelectorAll('.mobile-categories  .lv2-dropdown')
+
+mobileSubDropdown.forEach(item => {
+  item.onclick =() => {
+    item.querySelector('.lv2-sup-dropdown').classList.toggle('active')
+  }
+})
