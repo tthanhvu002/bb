@@ -733,8 +733,10 @@ a:hover {
 
     }
     ul {
-      top: -98vh;
-      height: 95vh;
+      top: -97vh;
+      height: 92vh;
+      left: 5vw;
+  
   
       position: absolute;
       visibility: unset;
@@ -1559,7 +1561,7 @@ a:hover {
 }
 
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 370px){
   .content{
     .list{
       .item{
