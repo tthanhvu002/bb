@@ -1231,6 +1231,8 @@ a:hover {
   }
   .footer .logo-list img {
     width: 50px;
+    height: 50px;
+    object-fit: contain;
   }
 }
 /* middle pc */
@@ -1299,6 +1301,8 @@ a:hover {
   }
   .footer .logo-list img {
     width: 50px;
+    height: 50px;
+    object-fit: contain;
   }
   .content .list .item .name {
     font-size: 13px;
