@@ -672,18 +672,20 @@ a:hover {
   }
   .mobile-categories {
     display: block;
-    position: relative;
+    position: absolute;
     opacity: 0;
     visibility: hidden;
+    top: -379px;
+    z-index: 99;
     transition: 0.2s ease-in-out;
   }
   .mobile-categories.active {
     visibility: visible;
     opacity: 1;
+    width: 200px;
   }
   .mobile-categories ul {
-    z-index: 9;
-    top: 20px;
+    top: -20px;
     position: absolute;
     visibility: unset;
     display: flex;
@@ -862,7 +864,7 @@ a:hover {
     font-size: 12px;
   }
   .content .list .item .name {
-    font-size: 16px;
+    font-size: 14px;
   }
   .top-product .top-product-title {
     gap: 5px;
@@ -885,6 +887,9 @@ a:hover {
     flex: none;
     width: 30%;
   }
+  .footer {
+    padding-bottom: 35px;
+  }
   .footer .footer-text {
     font-size: 12px;
   }
@@ -892,6 +897,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 40px;
   }
   .footer .container-al .left,
 .footer .container-al .right {
@@ -1153,7 +1159,7 @@ a:hover {
     padding: 8px 10px;
   }
   .footer .returns-visit .text, .footer .returns-link .text {
-    font-size: 11px;
+    font-size: 14px;
   }
   .footer .m-width {
     max-width: 220px;
@@ -1254,6 +1260,9 @@ a:hover {
   }
   .footer-text {
     font-size: 12px !important;
+  }
+  .footer .returns-link .text, .footer .returns-visit .text {
+    font-size: 13px;
   }
   .footer h2 {
     font-size: 14px;
