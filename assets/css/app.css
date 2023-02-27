@@ -278,7 +278,7 @@ a:hover {
 .categories ul li {
   white-space: nowrap;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 24px;
 }
 .categories ul .dropdown {
@@ -1090,6 +1090,12 @@ a:hover {
 }
 /* mobile & tablet */
 @media screen and (max-width: 768px) {
+  .pre-header {
+    padding: 5px 0;
+  }
+  .slider .item .name {
+    margin-top: 2px;
+  }
   .top-product-list {
     flex-wrap: nowrap;
     overflow: scroll;
@@ -1113,11 +1119,18 @@ a:hover {
     margin-left: 100px;
   }
   .section-title h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 /* small-pc */
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .top-product-title p {
+    font-size: 23px;
+  }
+  .top-product-title img {
+    width: 27px;
+    height: 27px;
+  }
   .footer .returns i {
     font-size: 10px;
   }
@@ -1150,6 +1163,7 @@ a:hover {
   }
   .section-title {
     margin-top: 37px;
+    padding: 16px 18px;
   }
   .section-title h1 {
     font-size: 17px;
@@ -1224,10 +1238,20 @@ a:hover {
     gap: 40px;
   }
   .categories ul li {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1025px) {
+  .top-product-title p {
+    font-size: 21px;
+  }
+  .top-product-title img {
+    height: 25px;
+    width: 25px;
+  }
+  .section-title {
+    padding: 12px 14px;
+  }
   .footer-text {
     font-size: 12px !important;
   }
