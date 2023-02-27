@@ -55,3 +55,13 @@ const items = document.querySelectorAll('.list .item:nth-child(5n)')
 items.forEach(item => {
   item.classList.add('width-100')
 })
+
+const mobileDropdown = document.querySelectorAll('.mobile-categories ul .dropdown')
+console.log(mobileDropdown);
+
+mobileDropdown.forEach(item => {
+  item.onclick = () => {
+    item.querySelector('.sub-dropdown').classList.toggle('active')
+    console.log(item.querySelector('.sub-dropdown'));
+  }
+})

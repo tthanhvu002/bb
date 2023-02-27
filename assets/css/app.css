@@ -297,8 +297,8 @@ a:hover {
   color: #959ead;
 }
 .categories ul .dropdown .sub-dropdown {
-  position: absolute;
   top: 40px;
+  position: absolute;
   transition: 0.2s ease;
   height: fit-content;
   left: 0;
@@ -674,22 +674,25 @@ a:hover {
   }
   .mobile-categories {
     display: block;
-    position: absolute;
+    position: fixed;
     opacity: 0;
     visibility: hidden;
     z-index: 99;
-    left: -4%;
+    top: 0vh;
+    height: 94vh;
+    left: 0vw;
+    width: fit-content;
     transition: 0.2s ease-in-out;
   }
   .mobile-categories.active {
     visibility: visible;
     opacity: 1;
   }
-  .mobile-categories ul {
-    top: -97vh;
-    height: 92vh;
-    left: 5vw;
-    position: absolute;
+  .mobile-categories .mobile-categories-list {
+    top: 0vh;
+    height: 94vh;
+    left: 0vw;
+    position: fixed;
     visibility: unset;
     display: flex;
     flex-direction: column;
@@ -698,55 +701,48 @@ a:hover {
     border: 1px solid #727272;
     width: fit-content;
   }
-  .mobile-categories ul li {
+  .mobile-categories .mobile-categories-list li {
     font-weight: 500;
     font-size: 12px;
     padding: 16px 8px;
     line-height: 24px;
   }
-  .mobile-categories ul .dropdown {
+  .mobile-categories .mobile-categories-list .dropdown {
     display: flex;
     align-items: center;
     gap: 8px;
-    position: relative;
     cursor: pointer;
     z-index: 99;
   }
-  .mobile-categories ul .dropdown i {
+  .mobile-categories .mobile-categories-list .dropdown i {
     font-size: 8px;
     color: #959ead;
   }
-  .mobile-categories ul .dropdown .sub-dropdown {
-    position: absolute;
-    top: 15px;
-    transition: 0.2s ease;
-    height: fit-content;
-    left: 145px;
-    width: 100px;
+  .mobile-categories .mobile-categories-list .dropdown .sub-dropdown {
+    height: 0;
+    overflow: hidden;
     display: flex;
-    visibility: hidden;
     opacity: 0;
     border-radius: 8px;
-    z-index: -99;
     flex-direction: column;
-    z-index: 0;
     font-weight: 400;
     background-color: #fff;
     border: 1px solid #ccc;
     gap: 10px;
+    transition: 0.2s ease;
   }
-  .mobile-categories ul .dropdown .sub-dropdown li {
+  .mobile-categories .mobile-categories-list .dropdown .sub-dropdown.active {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+  .mobile-categories .mobile-categories-list .dropdown .sub-dropdown li {
     font-weight: 400;
     font-size: 10px;
     color: #555;
     padding: 5px 0px;
     width: 100%;
     padding-left: 20px;
-  }
-  .mobile-categories ul .dropdown:hover .sub-dropdown {
-    z-index: 999;
-    opacity: 1;
-    visibility: unset;
   }
   .categories {
     display: none;
@@ -925,13 +921,16 @@ a:hover {
   }
   .footer .container-al .logo-list {
     flex-wrap: wrap;
+    gap: 25px;
     justify-content: center;
   }
   .footer .container-al .logo-list img {
-    width: 40px;
+    height: 60px;
+    width: 60px;
   }
   .footer .container-al .logo-2 {
-    width: 40px;
+    height: 60px;
+    width: 60px;
   }
   .footer .container-al .right {
     display: flex;
@@ -1073,7 +1072,7 @@ a:hover {
     width: 20%;
   }
   .banner {
-    height: 175px;
+    height: 130px;
     /* .bamboo-right{
         left: 580px;
     } */
@@ -1282,6 +1281,9 @@ a:hover {
   }
 }
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
+  .banner {
+    height: 200px;
+  }
   .categories ul {
     gap: 40px;
   }
@@ -1316,6 +1318,9 @@ a:hover {
     width: 50px;
     height: 50px;
     object-fit: contain;
+  }
+  .banner {
+    height: 170px;
   }
   .content .list .item .name {
     font-size: 13px;
