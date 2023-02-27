@@ -466,6 +466,9 @@ a:hover {
   font-size: 18px;
   gap: 4px;
 }
+.footer .returns-link i, .footer .returns-visit i {
+  font-size: 15px;
+}
 .footer .returns-link {
   justify-content: space-between;
 }
@@ -900,10 +903,10 @@ a:hover {
     justify-content: center;
   }
   .footer .container-al .logo-list img {
-    width: 50px;
+    width: 40px;
   }
   .footer .container-al .logo-2 {
-    width: 70px;
+    width: 40px;
   }
   .footer .container-al .right {
     display: flex;
@@ -1075,12 +1078,18 @@ a:hover {
     max-width: 100%;
     width: 100%;
   }
+  .footer .logo-list img {
+    width: 50px;
+  }
+  .footer .logo-2 {
+    width: 50px;
+  }
   .footer .footer-text {
     font-size: 12px;
   }
 }
 /* mobile & tablet */
-@media screen and (max-width: 1023.98px) {
+@media screen and (max-width: 768px) {
   .top-product-list {
     flex-wrap: nowrap;
     overflow: scroll;
@@ -1185,6 +1194,9 @@ a:hover {
   .banner-heading {
     /* font-size: 63px; */
   }
+  .returns-link i, .returns-visit i {
+    font-size: 14px;
+  }
   .categories ul {
     gap: 32px;
   }
@@ -1221,6 +1233,12 @@ a:hover {
   }
   .footer h2 {
     font-size: 14px;
+  }
+  .footer .logo-2 {
+    width: 50px;
+  }
+  .footer .logo-list img {
+    width: 50px;
   }
   .content .list .item .name {
     font-size: 13px;

@@ -480,6 +480,7 @@ a:hover {
       font-size: 16px;
       font-weight: 600;
     }
+    
     &-link,
     &-visit {
       display: flex;
@@ -489,6 +490,9 @@ a:hover {
       align-items: center;
       font-size: 18px;
       gap: 4px;
+      i{
+        font-size: 15px;
+      }
     }
     &-link {
       justify-content: space-between;
@@ -977,11 +981,11 @@ a:hover {
 
         justify-content: center;
         img {
-          width: 50px;
+          width: 40px;
         }
       }
       .logo-2 {
-        width: 70px;
+        width: 40px;
       }
       .right {
         display: flex;
@@ -1197,6 +1201,14 @@ a:hover {
         width: 100%;
       }
     }
+    .logo-list{
+      img{
+        width: 50px;
+      }
+    }
+    .logo-2{
+      width: 50px;
+    }
     .footer-text {
       font-size: 12px;
     }
@@ -1205,7 +1217,7 @@ a:hover {
 
 /* mobile & tablet */
 
-@media screen and (max-width: 1023.98px) {
+@media screen and (max-width: 768px) {
   .top-product-list {
     flex-wrap: nowrap;
     overflow: scroll;
@@ -1250,6 +1262,7 @@ a:hover {
         font-size: 10px;
       }
     }
+    
   }
   .logo-2{
     width: 50px;
@@ -1358,6 +1371,13 @@ a:hover {
       /* font-size: 63px; */
     }
   }
+  .returns{
+    &-link, &-visit{
+      i{
+        font-size: 14px;
+      }
+    }
+  }
   .content{
     .list{
       .item{
@@ -1416,7 +1436,14 @@ a:hover {
   h2{
     font-size: 14px;
   }
-
+  .logo-2{
+    width: 50px;
+  }
+  .logo-list{
+   img{
+    width: 50px;
+   } 
+  }
 }
 
 .content{
