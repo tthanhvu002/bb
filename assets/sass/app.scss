@@ -165,6 +165,7 @@ a:hover {
     bottom: 0;
     left: 63.4%;
     &-img {
+      width: 100%;
       height: 100%;
     }
 
@@ -723,7 +724,6 @@ a:hover {
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    top: -379px;
     z-index: 99;
     left: -4%;
     transition: 0.2s ease-in-out;
@@ -733,8 +733,8 @@ a:hover {
 
     }
     ul {
-      top: -42vh;
-      height: 93vh;
+      top: -98vh;
+      height: 95vh;
   
       position: absolute;
       visibility: unset;
@@ -857,7 +857,7 @@ a:hover {
     }
   }
   .banner {
-    height: 100px;
+    height: 80px;
     &-heading {
       font-size: 15px;
       margin-left: 38px;
@@ -882,12 +882,19 @@ a:hover {
       gap: 15px;
     }
     .logo {
-      width: 50px;
+      width: 45px;
     }
     .search-bar {
       width: 100%;
       margin-left: 0;
       margin-right: 0;
+      input{
+        height: 45px;
+      }
+      .search-icon{
+        height: 43px;
+        width: 43px;
+      }
     }
   }
   .categories {
@@ -1243,6 +1250,14 @@ a:hover {
       font-size: 14px;
     }
   }
+  .footer{
+    .logo-list{
+      img{
+        height: 40px;
+        width: 40px;object-fit: contain;
+      }
+    }
+  }
   .content {
     .list {
       .item {
@@ -1537,6 +1552,19 @@ a:hover {
         }
         .price {
           font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 350px){
+  .content{
+    .list{
+      .item{
+        .prices{
+          gap: 0;
         }
       }
     }
