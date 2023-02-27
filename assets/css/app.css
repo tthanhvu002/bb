@@ -853,10 +853,10 @@ a:hover {
     height: 20px;
   }
   .content .list .item .price {
-    font-size: 13px;
+    font-size: 12px;
   }
   .content .list .item .old-price {
-    font-size: 14px;
+    font-size: 12px;
   }
   .content .list .item .name {
     font-size: 16px;
