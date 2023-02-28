@@ -62,7 +62,6 @@ mobileDropdown.forEach((item) => {
     e.stopPropagation()
     item.querySelector(".sub-dropdown").classList.toggle("active");
     item.querySelector('i').classList.toggle('active')
-    console.log(item);
   };
 });
 
