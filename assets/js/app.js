@@ -2,6 +2,7 @@ const slider = document.querySelector(".slider");
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
 const width = document.querySelector(".slider .item").offsetWidth;
+const mobileOverlay = document.querySelector('.mobile-overlay')
 let i = 0;
 slider.onscroll = () => {
   setColorBtn();
@@ -40,6 +41,7 @@ const mobileCateBtn = document.querySelector(".mobile-cate-btn");
 const mobileCate = document.querySelector(".mobile-categories");
 mobileCateBtn.onclick = (e) => {
   mobileCate.classList.toggle("active");
+  mobileOverlay.classList.toggle('active')
 };
 
 /* mobileCate.onclick = () => {
@@ -52,14 +54,15 @@ items.forEach((item) => {
 });
 
 const mobileDropdown = document.querySelectorAll(
-  ".mobile-categories ul .dropdown"
+  ".mobile-categories ul > .dropdown"
 );
 
 mobileDropdown.forEach((item) => {
   item.onclick = (e) => {
     e.stopPropagation()
     item.querySelector(".sub-dropdown").classList.toggle("active");
-    
+    item.querySelector('i').classList.toggle('active')
+    console.log(item);
   };
 });
 
@@ -72,6 +75,8 @@ mobileSubDropdown.forEach((item) => {
 
     e.stopPropagation()
     item.querySelector('.lv2-sub-dropdown').classList.toggle('active')
+    item.querySelector('i').classList.toggle('active')
+
   };
 });
 
@@ -79,10 +84,11 @@ const lv2Dropdown = document.querySelectorAll(
   ".categories  .lv2-dropdown"
 );
 
-subDropdown.forEach((item) => {
+lv2Dropdown.forEach((item) => {
   item.onclick = (e) => {
 
     e.stopPropagation()
     item.querySelector('.lv2-sub-dropdown').classList.toggle('active')
+    item.style.height = "100%"
   };
 });

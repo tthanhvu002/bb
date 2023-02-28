@@ -661,6 +661,9 @@ a:hover {
 .mobile-cate-btn {
   display: none;
 }
+.mobile-overlay{
+  display: none;
+}
 //pc
 
 /* mobile */
@@ -761,6 +764,21 @@ a:hover {
   .mobile-cate-btn {
     display: block;
   }
+  .mobile-overlay{
+    display: block;
+    position: fixed;
+    right: 0;
+    opacity: 0;
+    z-index: 999;
+    width: 43vw;
+    height: 100vh;
+    top: 0;
+    background-color: #000;
+    transition: 0.2s ease;
+    &.active{
+      opacity: 0.4;
+    }
+  }
   .mobile-categories {
     display: block;
     overflow: scroll;
@@ -789,26 +807,34 @@ a:hover {
       background-color: #fff;
       border-radius: 8px;
       width: 57vw;
+      
       &::-webkit-scrollbar {
         display: none;
       }
       & > li {
-        border-bottom: 1px solid #72727281;
         font-weight: 500;
-        padding: 16px 8px;
+        padding: 10px 15px;
         line-height: 24px;
         cursor: pointer;
         font-size: 15px; 
       }
       .dropdown {
+        gap: 8px;
         display: flex;
         flex-direction: column;
         cursor: pointer;
         z-index: 99;
+
         span {
           display: flex;
           align-items: center;
           gap: 4px;
+            i{
+              transition: 0.1s;
+            }
+            i.active{
+              rotate: 180deg;
+            }
         }
         i {
           font-size: 8px;
@@ -824,7 +850,7 @@ a:hover {
           transition: 0.2s;
           font-weight: 400;
           visibility: hidden;
-          gap: 10px;
+          gap: 0px;
           transition: 0.2s ease;
           &.active {
             visibility: visible;
@@ -837,11 +863,13 @@ a:hover {
               display: flex;
               align-items: center;
               gap: 5px;
+              
             }
             .lv2-dropdown {
               max-height: 0;
               overflow: hidden;
               transition: 0.2s ease;
+              
             }
           }
           .lv2-sub-dropdown {
