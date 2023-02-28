@@ -596,7 +596,7 @@ a:hover {
         bottom: 110%;
         left: 0;
         background-color: #fff;
-        padding: 5px;
+        padding: 8px 24px;
         border-radius: 8px;
         left: 0;
         right: 0;
@@ -1389,6 +1389,9 @@ a:hover {
       align-items: center;
     }
     .returns {
+      .option-list{
+        padding: 8px 15px;
+      }
       &-link,
       &-visit {
         i {
@@ -1442,6 +1445,11 @@ a:hover {
     }
   }
   .footer {
+    .returns{
+      .option-list{
+        padding: 8px 24px;
+      }
+    }
     .logo-list {
       img {
         height: 40px;
@@ -1524,6 +1532,9 @@ a:hover {
   }
   .footer {
     .returns {
+      .option-list{
+        padding: 8px 10px;
+      }
       i {
         font-size: 10px;
       }

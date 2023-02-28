@@ -555,7 +555,7 @@ a:hover {
   bottom: 110%;
   left: 0;
   background-color: #fff;
-  padding: 5px;
+  padding: 8px 24px;
   border-radius: 8px;
   left: 0;
   right: 0;
@@ -1258,6 +1258,9 @@ a:hover {
   .footer .flex-column {
     align-items: center;
   }
+  .footer .returns .option-list {
+    padding: 8px 15px;
+  }
   .footer .returns-link, .footer .returns-visit {
     padding: 8px 15px;
   }
@@ -1300,6 +1303,9 @@ a:hover {
   }
   .select-language-btn .text {
     font-size: 14px;
+  }
+  .footer .returns .option-list {
+    padding: 8px 24px;
   }
   .footer .logo-list img {
     height: 40px;
@@ -1354,6 +1360,9 @@ a:hover {
   .top-product-title img {
     width: 27px;
     height: 27px;
+  }
+  .footer .returns .option-list {
+    padding: 8px 10px;
   }
   .footer .returns i {
     font-size: 10px;
