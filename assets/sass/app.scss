@@ -279,7 +279,7 @@ a:hover {
   padding: 30px 0;
   border-bottom: 1px solid #f3f4f4;
   .categories-list{
-    li{
+    & >li{
       &:hover{
         color: #ff615c;
       }
