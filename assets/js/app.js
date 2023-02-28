@@ -74,3 +74,15 @@ mobileSubDropdown.forEach((item) => {
     item.querySelector('.lv2-sub-dropdown').classList.toggle('active')
   };
 });
+
+const lv2Dropdown = document.querySelectorAll(
+  ".categories  .lv2-dropdown"
+);
+
+subDropdown.forEach((item) => {
+  item.onclick = (e) => {
+
+    e.stopPropagation()
+    item.querySelector('.lv2-sub-dropdown').classList.toggle('active')
+  };
+});
