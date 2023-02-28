@@ -335,7 +335,7 @@ a:hover {
   display: flex;
   border: 1px solid rgba(114, 114, 114, 0.4431372549);
   background-color: #fff;
-  left: 101%;
+  left: 111%;
   top: -3%;
   padding: 10px;
   border-radius: 8px;
@@ -370,7 +370,7 @@ a:hover {
   transition: 0.2s ease;
   height: fit-content;
   left: 0;
-  width: 140px;
+  width: fit-content;
   display: flex;
   visibility: hidden;
   opacity: 0;
@@ -380,14 +380,15 @@ a:hover {
   z-index: 0;
   background-color: #fff;
   border: 1px solid #ccc;
-  padding: 20px 0px;
+  padding: 10px 0px;
+  padding-right: 10px;
   font-weight: 400;
-  padding-left: 20px;
-  gap: 10px;
+  padding-left: 10px;
+  gap: 0px;
 }
 .categories ul .dropdown .sub-dropdown li {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   color: #555;
   padding: 5px 0px;
   width: 100%;
