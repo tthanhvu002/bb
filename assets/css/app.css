@@ -603,7 +603,7 @@ a:hover {
     gap: 44px;
     white-space: nowrap;
     position: fixed;
-    bottom: 0;
+    bottom: -3px;
     left: 0;
     right: 0;
     background-color: #fff;
