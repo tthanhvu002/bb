@@ -578,10 +578,37 @@ a:hover {
       font-size: 16px;
       font-weight: 600;
     }
-
+    &-link{
+      position: relative;
+      cursor: pointer;
+      .option-list{
+        &.active{
+          opacity: 1;
+          visibility: visible;
+        }
+        transition: 0.1s;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        bottom: 110%;
+        left: 0;
+        background-color: #fff;
+        padding: 5px;
+        border-radius: 8px;
+        left: 0;
+        right: 0;
+        .option-item{
+          font-size: 13px;
+          user-select: none;
+          cursor: pointer;
+          &:hover, &.active{
+            background-color: #5555555a;
+          }
+        }
+      }
+    }
     &-link,
-    &-visit,select {
-      border: none;
+    &-visit {
       display: flex;
       padding: 8px 24px;
       border-radius: 8px;
@@ -592,11 +619,6 @@ a:hover {
       i {
         font-size: 15px;
       }
-    }
-    select{
-      padding: 8px;
-      font-size: 15px;
-      font-weight: 500;
     }
     &-link {
       justify-content: space-between;
@@ -1179,11 +1201,6 @@ a:hover {
       .d-flex {
         width: 100%;
       }
-      select{
-        font-size: 18px;
-    font-weight: 500;
-    padding: 8px 20px;
-      }
     }
   }
   .categories {
@@ -1677,7 +1694,6 @@ a:hover {
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1025px) {
-  
   .categories{
     ul{
       .dropdown{
@@ -1709,7 +1725,7 @@ a:hover {
       &-link,
       &-visit {
         .text {
-          font-size: 12px !important;
+          font-size: 13px;
         }
       }
     }

@@ -3,6 +3,10 @@ const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
 const width = document.querySelector(".slider .item").offsetWidth;
 const mobileOverlay = document.querySelector('.mobile-overlay')
+const select = document.querySelector('.returns-link .text')
+const optionList = document.querySelector('.option-list')
+const optionItems = document.querySelectorAll('.option-item')
+
 let i = 0;
 slider.onscroll = () => {
   setColorBtn();
@@ -96,3 +100,17 @@ mobileOverlay.onclick = () => {
   mobileCate.classList.remove('active')
   mobileOverlay.classList.remove('active')
 }
+
+
+select.onclick = () => {
+  optionList.classList.toggle('active')
+}
+optionItems.forEach(item => {
+  item.onclick = () => {
+    select.innerHTML = item.innerHTML
+    optionItems.forEach(i => {
+      i.classList.remove('active')
+    })
+    item.classList.add('active')
+  }
+})

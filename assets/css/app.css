@@ -539,8 +539,36 @@ a:hover {
   font-size: 16px;
   font-weight: 600;
 }
-.footer .returns-link, .footer .returns-visit, .footer .returns select {
-  border: none;
+.footer .returns-link {
+  position: relative;
+  cursor: pointer;
+}
+.footer .returns-link .option-list {
+  transition: 0.1s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: 110%;
+  left: 0;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 8px;
+  left: 0;
+  right: 0;
+}
+.footer .returns-link .option-list.active {
+  opacity: 1;
+  visibility: visible;
+}
+.footer .returns-link .option-list .option-item {
+  font-size: 13px;
+  user-select: none;
+  cursor: pointer;
+}
+.footer .returns-link .option-list .option-item:hover, .footer .returns-link .option-list .option-item.active {
+  background-color: rgba(85, 85, 85, 0.3529411765);
+}
+.footer .returns-link, .footer .returns-visit {
   display: flex;
   padding: 8px 24px;
   border-radius: 8px;
@@ -549,13 +577,8 @@ a:hover {
   font-size: 18px;
   gap: 4px;
 }
-.footer .returns-link i, .footer .returns-visit i, .footer .returns select i {
+.footer .returns-link i, .footer .returns-visit i {
   font-size: 15px;
-}
-.footer .returns select {
-  padding: 8px;
-  font-size: 15px;
-  font-weight: 500;
 }
 .footer .returns-link {
   justify-content: space-between;
@@ -1090,11 +1113,6 @@ a:hover {
   .footer .container-al .d-flex {
     width: 100%;
   }
-  .footer .container-al select {
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 20px;
-  }
   .categories ul {
     gap: 8px;
   }
@@ -1468,7 +1486,7 @@ a:hover {
     font-size: 12px !important;
   }
   .footer .returns-link .text, .footer .returns-visit .text {
-    font-size: 12px !important;
+    font-size: 13px;
   }
   .footer h2 {
     font-size: 14px;
