@@ -16,7 +16,7 @@ p {
 a {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: unset;
 }
 
 ul {
@@ -428,6 +428,11 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.top-product-item:hover {
+  opacity: 0.6;
 }
 .top-product-title {
   display: flex;
@@ -485,6 +490,11 @@ a:hover {
   color: #727272;
   font-size: 14px;
   max-width: 365px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.footer .footer-text:hover {
+  opacity: 0.6;
 }
 .footer .logo-list {
   display: flex;
@@ -529,7 +539,8 @@ a:hover {
   font-size: 16px;
   font-weight: 600;
 }
-.footer .returns-link, .footer .returns-visit {
+.footer .returns-link, .footer .returns-visit, .footer .returns select {
+  border: none;
   display: flex;
   padding: 8px 24px;
   border-radius: 8px;
@@ -538,8 +549,13 @@ a:hover {
   font-size: 18px;
   gap: 4px;
 }
-.footer .returns-link i, .footer .returns-visit i {
+.footer .returns-link i, .footer .returns-visit i, .footer .returns select i {
   font-size: 15px;
+}
+.footer .returns select {
+  padding: 8px;
+  font-size: 15px;
+  font-weight: 500;
 }
 .footer .returns-link {
   justify-content: space-between;
@@ -1073,6 +1089,11 @@ a:hover {
   }
   .footer .container-al .d-flex {
     width: 100%;
+  }
+  .footer .container-al select {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 20px;
   }
   .categories ul {
     gap: 8px;

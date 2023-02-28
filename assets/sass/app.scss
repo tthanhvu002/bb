@@ -15,7 +15,7 @@ p {
 a {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: unset;
 }
 
 ul {
@@ -458,6 +458,11 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: 0.2s ease;
+    cursor: pointer;
+        &:hover{
+          opacity: 0.6;
+        }
   }
 
   &-title {
@@ -520,6 +525,11 @@ a:hover {
     color: #727272;
     font-size: 14px;
     max-width: 365px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    &:hover{
+      opacity: 0.6;
+    }
   }
 
   .logo-list {
@@ -570,7 +580,8 @@ a:hover {
     }
 
     &-link,
-    &-visit {
+    &-visit,select {
+      border: none;
       display: flex;
       padding: 8px 24px;
       border-radius: 8px;
@@ -581,6 +592,11 @@ a:hover {
       i {
         font-size: 15px;
       }
+    }
+    select{
+      padding: 8px;
+      font-size: 15px;
+      font-weight: 500;
     }
     &-link {
       justify-content: space-between;
@@ -1119,6 +1135,7 @@ a:hover {
       .top-product-item {
         flex: none;
         width: 30%;
+        
       }
     }
   }
@@ -1161,6 +1178,11 @@ a:hover {
       }
       .d-flex {
         width: 100%;
+      }
+      select{
+        font-size: 18px;
+    font-weight: 500;
+    padding: 8px 20px;
       }
     }
   }
