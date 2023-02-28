@@ -92,3 +92,8 @@ lv2Dropdown.forEach((item) => {
     item.style.height = "100%"
   };
 });
+
+mobileOverlay.onclick = () => {
+  mobileCate.classList.remove('active')
+  mobileOverlay.classList.remove('active')
+}
