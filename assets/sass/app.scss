@@ -1677,6 +1677,7 @@ a:hover {
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1025px) {
+  
   .categories{
     ul{
       .dropdown{
@@ -1708,7 +1709,7 @@ a:hover {
       &-link,
       &-visit {
         .text {
-          font-size: 13px;
+          font-size: 12px !important;
         }
       }
     }

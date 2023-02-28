@@ -1468,7 +1468,7 @@ a:hover {
     font-size: 12px !important;
   }
   .footer .returns-link .text, .footer .returns-visit .text {
-    font-size: 13px;
+    font-size: 12px !important;
   }
   .footer h2 {
     font-size: 14px;
