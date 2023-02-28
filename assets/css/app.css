@@ -783,7 +783,7 @@ a:hover {
     font-size: 15px;
   }
   .mobile-categories .mobile-categories-list .dropdown {
-    gap: 8px;
+    gap: 0px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
