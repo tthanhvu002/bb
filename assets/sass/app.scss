@@ -282,22 +282,7 @@ a:hover {
     }
   }
 }
-.categories{
-  .categories-list{
-    & > li{
-    }
-    .sub-dropdown{
-      li{
-        font-size: 15px !important;
-      }
-    }
-    .lv2-sub-dropdown{
-      li{
-        font-size: 13px !important;
-      }
-    }
-  }
-}
+
 .categories {
   padding: 30px 0;
   border-bottom: 1px solid #f3f4f4;
@@ -413,9 +398,8 @@ a:hover {
         z-index: 0;
         background-color: #fff;
         border: 1px solid #ccc;
-        padding: 10px 0px;
-        padding-right: 10px;
-        font-weight: 400;padding-left: 10px;
+        padding: 20px 20px;
+        font-weight: 400;
         gap: 0px;
 
         li {
@@ -1728,6 +1712,22 @@ a:hover {
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
+  .categories{
+    .categories-list{
+      & > li{
+      }
+      .sub-dropdown{
+        li{
+          font-size: 20px !important;
+        }
+      }
+      .lv2-sub-dropdown{
+        li{
+          font-size: 18px !important;
+        }
+      }
+    }
+  }
   .banner {
     height: 200px;
   }

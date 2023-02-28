@@ -276,13 +276,6 @@ a:hover {
   align-items: center;
 }
 
-.categories .categories-list .sub-dropdown li {
-  font-size: 15px !important;
-}
-.categories .categories-list .lv2-sub-dropdown li {
-  font-size: 13px !important;
-}
-
 .categories {
   padding: 30px 0;
   border-bottom: 1px solid #f3f4f4;
@@ -387,10 +380,8 @@ a:hover {
   z-index: 0;
   background-color: #fff;
   border: 1px solid #ccc;
-  padding: 10px 0px;
-  padding-right: 10px;
+  padding: 20px 20px;
   font-weight: 400;
-  padding-left: 10px;
   gap: 0px;
 }
 .categories ul .dropdown .sub-dropdown li {
@@ -1486,6 +1477,12 @@ a:hover {
   }
 }
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
+  .categories .categories-list .sub-dropdown li {
+    font-size: 20px !important;
+  }
+  .categories .categories-list .lv2-sub-dropdown li {
+    font-size: 18px !important;
+  }
   .banner {
     height: 200px;
   }
