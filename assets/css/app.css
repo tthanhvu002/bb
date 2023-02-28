@@ -293,7 +293,7 @@ a:hover {
   cursor: pointer;
   transition: 0.2s ease;
 }
-.categories ul > li::after {
+.categories ul > li .line::after {
   position: absolute;
   height: 2px;
   background-color: #ff615c;
@@ -303,7 +303,7 @@ a:hover {
   bottom: 0;
   left: 0;
 }
-.categories ul > li:hover:after {
+.categories ul > li .line:hover:after {
   width: 40%;
 }
 .categories ul .dropdown span {

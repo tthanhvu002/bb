@@ -275,7 +275,7 @@ a:hover {
   }
 }
 .categories{
-  
+
 }
 .categories {
   padding: 30px 0;
@@ -303,7 +303,7 @@ a:hover {
       position: relative;
       cursor: pointer;
       transition: 0.2s ease;
-      &::after{
+      .line::after{
         position: absolute;
         height: 2px;
         background-color: #ff615c;
@@ -313,7 +313,7 @@ a:hover {
         bottom: 0;
         left: 0;
       }
-      &:hover{
+      .line:hover{
         &:after{
           width: 40%;
         }
