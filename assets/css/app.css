@@ -543,6 +543,10 @@ a:hover {
   position: relative;
   cursor: pointer;
 }
+.footer .returns-link:hover .option-list {
+  opacity: 1;
+  visibility: visible;
+}
 .footer .returns-link .option-list {
   transition: 0.1s;
   opacity: 0;
@@ -555,10 +559,6 @@ a:hover {
   border-radius: 8px;
   left: 0;
   right: 0;
-}
-.footer .returns-link .option-list.active {
-  opacity: 1;
-  visibility: visible;
 }
 .footer .returns-link .option-list .option-item {
   font-size: 13px;

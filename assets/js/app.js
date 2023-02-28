@@ -102,9 +102,7 @@ mobileOverlay.onclick = () => {
 }
 
 
-select.onclick = () => {
-  optionList.classList.toggle('active')
-}
+
 optionItems.forEach(item => {
   item.onclick = () => {
     select.innerHTML = item.innerHTML

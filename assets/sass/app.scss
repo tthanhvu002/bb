@@ -581,11 +581,14 @@ a:hover {
     &-link{
       position: relative;
       cursor: pointer;
-      .option-list{
-        &.active{
+      &:hover{
+        .option-list{
           opacity: 1;
           visibility: visible;
         }
+      }
+      .option-list{
+        
         transition: 0.1s;
         opacity: 0;
         visibility: hidden;
