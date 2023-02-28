@@ -278,7 +278,16 @@ a:hover {
 .categories {
   padding: 30px 0;
   border-bottom: 1px solid #f3f4f4;
-
+  .categories-list{
+    li{
+      &:hover{
+        color: #ff615c;
+      }
+      &:after{
+        display: none;
+      }
+    }
+  }
   ul {
     display: flex;
     align-items: center;
@@ -360,7 +369,7 @@ a:hover {
       cursor: pointer;
       z-index: 99;
       i {
-        font-size: 8px;
+        font-size: 12px;
         color: #959ead;
       }
       .sub-dropdown {
