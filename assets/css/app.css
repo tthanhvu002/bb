@@ -325,6 +325,9 @@ a:hover {
   transition: 0.2s ease;
   position: relative;
 }
+.categories ul .dropdown .lv2-dropdown i {
+  font-size: 8px;
+}
 .categories ul .dropdown .lv2-dropdown:hover .lv2-sub-dropdown {
   opacity: 1;
 }

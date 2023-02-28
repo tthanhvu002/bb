@@ -339,7 +339,9 @@ a:hover {
       }
       .lv2-dropdown {
         transition: 0.2s ease;
-        position: relative;
+        position: relative;i{
+          font-size: 8px;
+        }
         &:hover {
           .lv2-sub-dropdown {
             opacity: 1;
