@@ -860,6 +860,7 @@ a:hover {
     display: block;
     position: fixed;
     right: 0;
+    visibility: hidden;
     opacity: 0;
     z-index: 96;
     width: 43vw;
@@ -869,6 +870,7 @@ a:hover {
     transition: 0.2s ease;
     &.active {
       opacity: 0.4;
+      visibility: visible;
     }
   }
   .mobile-categories {
@@ -1151,9 +1153,9 @@ a:hover {
       flex-wrap: nowrap;
       overflow: scroll;
       gap: 3px;
-      &::-webkit-scrollbar {
+      /* &::-webkit-scrollbar {
         display: none;
-      }
+      } */
       p {
         font-size: 9px;
       }

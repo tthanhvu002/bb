@@ -794,6 +794,7 @@ a:hover {
     display: block;
     position: fixed;
     right: 0;
+    visibility: hidden;
     opacity: 0;
     z-index: 96;
     width: 43vw;
@@ -804,6 +805,7 @@ a:hover {
   }
   .mobile-overlay.active {
     opacity: 0.4;
+    visibility: visible;
   }
   .mobile-categories {
     display: block;
@@ -1061,9 +1063,9 @@ a:hover {
     flex-wrap: nowrap;
     overflow: scroll;
     gap: 3px;
-  }
-  .top-product .top-product-list::-webkit-scrollbar {
-    display: none;
+    /* &::-webkit-scrollbar {
+      display: none;
+    } */
   }
   .top-product .top-product-list p {
     font-size: 9px;
