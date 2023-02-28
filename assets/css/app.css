@@ -1133,8 +1133,14 @@ a:hover {
   .width-100 {
     width: 100% !important;
   }
+  .categories .categories-list .sub-dropdown {
+    padding: 8px !important;
+  }
   .categories .categories-list .sub-dropdown li {
     font-size: 12px !important;
+  }
+  .categories .categories-list .lv2-sub-dropdown {
+    padding: 6px;
   }
   .categories .categories-list .lv2-sub-dropdown li {
     font-size: 10px !important;
@@ -1477,11 +1483,17 @@ a:hover {
   }
 }
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
+  .categories .categories-list .lv2-sub-dropdown {
+    padding: 8px;
+  }
+  .categories .categories-list .sub-dropdown {
+    padding: 10px !important;
+  }
   .categories .categories-list .sub-dropdown li {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
   .categories .categories-list .lv2-sub-dropdown li {
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
   .banner {
     height: 200px;

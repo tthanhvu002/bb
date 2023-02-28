@@ -1235,11 +1235,13 @@ a:hover {
       & > li{
       }
       .sub-dropdown{
+        padding: 8px !important;
         li{
           font-size: 12px !important;
         }
       }
       .lv2-sub-dropdown{
+        padding: 6px;
         li{
           font-size: 10px !important;
         }
@@ -1716,14 +1718,18 @@ a:hover {
     .categories-list{
       & > li{
       }
+      .lv2-sub-dropdown{
+        padding: 8px;
+      }
       .sub-dropdown{
+        padding: 10px !important;
         li{
-          font-size: 20px !important;
+          font-size: 18px !important;
         }
       }
       .lv2-sub-dropdown{
         li{
-          font-size: 18px !important;
+          font-size: 16px !important;
         }
       }
     }
