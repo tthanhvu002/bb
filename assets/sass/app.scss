@@ -1204,10 +1204,14 @@ a:hover {
     ul {
       gap: 18px;
       li {
+       
         font-size: 13px;
       }
       .dropdown {
         gap: 6px;
+        i{
+          font-size: 8px;
+        }
       }
     }
   }
@@ -1635,6 +1639,15 @@ a:hover {
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1025px) {
+  .categories{
+    ul{
+      .dropdown{
+        i{
+          font-size: 10px;
+        }
+      }
+    }
+  }
   .top-product {
     &-title {
       p {

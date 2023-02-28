@@ -1107,6 +1107,9 @@ a:hover {
   .categories ul .dropdown {
     gap: 6px;
   }
+  .categories ul .dropdown i {
+    font-size: 8px;
+  }
   .header .btns-wrap {
     gap: 18px;
   }
@@ -1414,6 +1417,9 @@ a:hover {
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1025px) {
+  .categories ul .dropdown i {
+    font-size: 10px;
+  }
   .top-product-title p {
     font-size: 21px;
   }
