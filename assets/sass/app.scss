@@ -352,7 +352,7 @@ a:hover {
       display: flex;
       border: 1px solid #72727271;
       background-color: #fff;
-      left: 111%;
+      right:-97%;
       top: -3%;
       padding: 10px;
       border-radius: 8px;
@@ -401,7 +401,8 @@ a:hover {
         padding: 20px 20px;
         font-weight: 400;
         gap: 0px;
-
+        & > li{
+        }
         li {
           font-weight: 400;
           font-size: 16px;
@@ -1747,6 +1748,15 @@ a:hover {
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1025px) {
+  .categories{
+    ul{
+      .dropdown{
+        .sub-dropdown{
+          padding: 8px !important;
+        }
+      }
+    }
+  }
   .categories{
     .categories-list{
       & > li{
