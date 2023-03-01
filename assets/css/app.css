@@ -292,6 +292,7 @@ a:hover {
   gap: 68px;
 }
 .categories ul > li {
+  font-weight: 500;
   white-space: nowrap;
   font-weight: 500;
   font-size: 24px;
@@ -321,6 +322,9 @@ a:hover {
   align-items: center;
   gap: 5px;
 }
+.categories ul .dropdown li {
+  font-weight: 500;
+}
 .categories ul .dropdown .lv2-dropdown {
   transition: 0.2s ease;
   position: relative;
@@ -335,7 +339,7 @@ a:hover {
   display: flex;
   border: 1px solid rgba(114, 114, 114, 0.4431372549);
   background-color: #fff;
-  right: -97%;
+  left: calc(100% + 20px);
   top: -3%;
   padding: 10px;
   border-radius: 8px;
@@ -346,6 +350,7 @@ a:hover {
   flex-direction: column;
 }
 .categories ul .lv2-sub-dropdown li {
+  font-weight: 500;
   padding-left: 0 !important;
   transition: 0.2s ease;
   width: fit-content;
@@ -365,6 +370,8 @@ a:hover {
   color: #959ead;
 }
 .categories ul .dropdown .sub-dropdown {
+  max-width: 20em;
+  min-width: 10em;
   top: 40px;
   position: absolute;
   transition: 0.2s ease;
@@ -380,9 +387,14 @@ a:hover {
   z-index: 0;
   background-color: #fff;
   border: 1px solid #ccc;
-  padding: 20px 20px;
+  padding: 20px;
   font-weight: 400;
   gap: 0px;
+  align-items: start;
+}
+.categories ul .dropdown .sub-dropdown > li span {
+  width: 100%;
+  justify-content: space-between;
 }
 .categories ul .dropdown .sub-dropdown li {
   font-weight: 400;
@@ -710,7 +722,7 @@ a:hover {
 }
 
 /* mobile */
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 768px) {
   .container-al {
     padding: 0 15px;
   }
@@ -1140,6 +1152,7 @@ a:hover {
     font-size: 12px !important;
   }
   .categories .categories-list .lv2-sub-dropdown {
+    left: calc(100% + 10px);
     padding: 6px;
   }
   .categories .categories-list .lv2-sub-dropdown li {
@@ -1492,6 +1505,9 @@ a:hover {
   .categories .categories-list .sub-dropdown li {
     font-size: 18px !important;
   }
+  .categories .categories-list .lv2-sub-dropdown {
+    left: calc(100% + 10px);
+  }
   .categories .categories-list .lv2-sub-dropdown li {
     font-size: 16px !important;
   }
@@ -1508,6 +1524,12 @@ a:hover {
 @media screen and (min-width: 1024px) and (max-width: 1025px) {
   .categories ul .dropdown .sub-dropdown {
     padding: 8px !important;
+  }
+  .categories ul .lv2-sub-dropdown {
+    left: calc(100% + 10px);
+  }
+  .categories ul .lv2-sub-dropdown li {
+    font-size: 16px !important;
   }
   .categories .categories-list .sub-dropdown li {
     font-size: 12px !important;

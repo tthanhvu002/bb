@@ -211,7 +211,7 @@ a:hover {
     }
 
     .search-icon {
-      &:hover{
+      &:hover {
         opacity: 0.7;
       }
       transition: 0.2s ease;
@@ -261,7 +261,7 @@ a:hover {
         width: 24px;
       }
       position: relative;
-      &:hover{
+      &:hover {
         opacity: 0.7;
       }
     }
@@ -286,12 +286,12 @@ a:hover {
 .categories {
   padding: 30px 0;
   border-bottom: 1px solid #f3f4f4;
-  .categories-list{
-    & >li{
-      &:hover{
+  .categories-list {
+    & > li {
+      &:hover {
         color: #ff615c;
       }
-      &:after{
+      &:after {
         display: none;
       }
     }
@@ -301,6 +301,7 @@ a:hover {
     align-items: center;
     gap: 68px;
     & > li {
+      font-weight: 500;
       white-space: nowrap;
       font-weight: 500;
       font-size: 24px;
@@ -309,7 +310,7 @@ a:hover {
       position: relative;
       cursor: pointer;
       transition: 0.2s ease;
-      .line::after{
+      .line::after {
         position: absolute;
         height: 2px;
         background-color: #ff615c;
@@ -319,8 +320,8 @@ a:hover {
         bottom: 0;
         left: 0;
       }
-      .line:hover{
-        &:after{
+      .line:hover {
+        &:after {
           width: 40%;
         }
       }
@@ -334,10 +335,12 @@ a:hover {
         gap: 5px;
       }
       li {
+        font-weight: 500;
       }
       .lv2-dropdown {
         transition: 0.2s ease;
-        position: relative;i{
+        position: relative;
+        i {
           font-size: 8px;
         }
         &:hover {
@@ -347,12 +350,13 @@ a:hover {
         }
       }
     }
-    
+
     .lv2-sub-dropdown {
       display: flex;
       border: 1px solid #72727271;
       background-color: #fff;
-      right:-97%;
+      left: calc(100% + 20px);
+      
       top: -3%;
       padding: 10px;
       border-radius: 8px;
@@ -362,6 +366,7 @@ a:hover {
       max-height: 200px;
       flex-direction: column;
       li {
+        font-weight: 500;
         padding-left: 0 !important;
         transition: 0.2s ease;
         width: fit-content;
@@ -383,6 +388,8 @@ a:hover {
         color: #959ead;
       }
       .sub-dropdown {
+        max-width: 20em;
+        min-width: 10em;
         top: 40px;
         position: absolute;
         transition: 0.2s ease;
@@ -398,10 +405,15 @@ a:hover {
         z-index: 0;
         background-color: #fff;
         border: 1px solid #ccc;
-        padding: 20px 20px;
+        padding: 20px;
         font-weight: 400;
         gap: 0px;
-        & > li{
+        align-items: start;
+        & > li {
+          span {
+            width: 100%;
+            justify-content: space-between;
+          }
         }
         li {
           font-weight: 400;
@@ -461,9 +473,9 @@ a:hover {
     flex-direction: column;
     transition: 0.2s ease;
     cursor: pointer;
-        &:hover{
-          opacity: 0.6;
-        }
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   &-title {
@@ -528,7 +540,7 @@ a:hover {
     max-width: 365px;
     cursor: pointer;
     transition: 0.2s ease;
-    &:hover{
+    &:hover {
       opacity: 0.6;
     }
   }
@@ -549,9 +561,8 @@ a:hover {
     transition: 0.2s ease-in-out;
     cursor: pointer;
   }
-  img:hover{
+  img:hover {
     opacity: 0.5;
-
   }
   h2 {
     font-size: 16px;
@@ -579,17 +590,16 @@ a:hover {
       font-size: 16px;
       font-weight: 600;
     }
-    &-link{
+    &-link {
       position: relative;
       cursor: pointer;
-      &:hover{
-        .option-list{
+      &:hover {
+        .option-list {
           opacity: 1;
           visibility: visible;
         }
       }
-      .option-list{
-        
+      .option-list {
         transition: 0.1s;
         opacity: 0;
         visibility: hidden;
@@ -601,11 +611,12 @@ a:hover {
         border-radius: 8px;
         left: 0;
         right: 0;
-        .option-item{
+        .option-item {
           font-size: 13px;
           user-select: none;
           cursor: pointer;
-          &:hover, &.active{
+          &:hover,
+          &.active {
             background-color: #5555555a;
           }
         }
@@ -692,7 +703,7 @@ a:hover {
         cursor: pointer;
         transition: 0.2s ease;
 
-        &:hover{
+        &:hover {
           opacity: 0.6;
         }
       }
@@ -760,7 +771,7 @@ a:hover {
 
 /* mobile */
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 768px) {
   .container-al {
     padding: 0 15px;
   }
@@ -808,7 +819,6 @@ a:hover {
         width: 24px;
       }
       position: relative;
-      
     }
     .cart-btn::after {
       position: absolute;
@@ -1163,7 +1173,6 @@ a:hover {
       .top-product-item {
         flex: none;
         width: 30%;
-        
       }
     }
   }
@@ -1231,19 +1240,20 @@ a:hover {
   .width-100 {
     width: 100% !important;
   }
-  .categories{
-    .categories-list{
-      & > li{
+  .categories {
+    .categories-list {
+      & > li {
       }
-      .sub-dropdown{
+      .sub-dropdown {
         padding: 8px !important;
-        li{
+        li {
           font-size: 12px !important;
         }
       }
-      .lv2-sub-dropdown{
+      .lv2-sub-dropdown {
+        left: calc(100% + 10px);
         padding: 6px;
-        li{
+        li {
           font-size: 10px !important;
         }
       }
@@ -1282,12 +1292,11 @@ a:hover {
     ul {
       gap: 18px;
       li {
-       
         font-size: 13px;
       }
       .dropdown {
         gap: 6px;
-        i{
+        i {
           font-size: 8px;
         }
       }
@@ -1407,7 +1416,7 @@ a:hover {
       align-items: center;
     }
     .returns {
-      .option-list{
+      .option-list {
         padding: 8px 15px;
       }
       &-link,
@@ -1463,8 +1472,8 @@ a:hover {
     }
   }
   .footer {
-    .returns{
-      .option-list{
+    .returns {
+      .option-list {
         padding: 8px 24px;
       }
     }
@@ -1550,7 +1559,7 @@ a:hover {
   }
   .footer {
     .returns {
-      .option-list{
+      .option-list {
         padding: 8px 10px;
       }
       i {
@@ -1715,21 +1724,22 @@ a:hover {
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
-  .categories{
-    .categories-list{
-      & > li{
+  .categories {
+    .categories-list {
+      & > li {
       }
-      .lv2-sub-dropdown{
+      .lv2-sub-dropdown {
         padding: 8px;
       }
-      .sub-dropdown{
+      .sub-dropdown {
         padding: 10px !important;
-        li{
+        li {
           font-size: 18px !important;
         }
       }
-      .lv2-sub-dropdown{
-        li{
+      .lv2-sub-dropdown {
+        left: calc(100% + 10px);
+        li {
           font-size: 16px !important;
         }
       }
@@ -1748,35 +1758,41 @@ a:hover {
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1025px) {
-  .categories{
-    ul{
-      .dropdown{
-        .sub-dropdown{
+  .categories {
+    ul {
+      .dropdown {
+        .sub-dropdown {
           padding: 8px !important;
+        }
+      }
+      .lv2-sub-dropdown {
+        left: calc(100% + 10px);
+        li {
+          font-size: 16px !important;
         }
       }
     }
   }
-  .categories{
-    .categories-list{
-      & > li{
+  .categories {
+    .categories-list {
+      & > li {
       }
-      .sub-dropdown{
-        li{
+      .sub-dropdown {
+        li {
           font-size: 12px !important;
         }
       }
-      .lv2-sub-dropdown{
-        li{
+      .lv2-sub-dropdown {
+        li {
           font-size: 10px !important;
         }
       }
     }
   }
-  .categories{
-    ul{
-      .dropdown{
-        i{
+  .categories {
+    ul {
+      .dropdown {
+        i {
           font-size: 10px;
         }
       }
