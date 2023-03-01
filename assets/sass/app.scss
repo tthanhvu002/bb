@@ -371,6 +371,9 @@ a:hover {
         transition: 0.2s ease;
         width: fit-content;
         padding-left: 0;
+        span{
+          font-weight: 500;
+        }
       }
     }
 
@@ -411,12 +414,13 @@ a:hover {
         align-items: start;
         & > li {
           span {
+            font-weight: 500;
             width: 100%;
             justify-content: space-between;
           }
         }
         li {
-          font-weight: 400;
+          font-weight: 500;
           font-size: 16px;
           color: #555;
           padding: 5px 0px;
@@ -771,7 +775,7 @@ a:hover {
 
 /* mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .container-al {
     padding: 0 15px;
   }
@@ -1455,7 +1459,15 @@ a:hover {
     }
   }
 }
+.list {
+  .item:nth-child(4n) {
+  }
+}
 
+.item.only-pc {
+  width: 100%;
+  flex: 1;
+}
 /* mobile & tablet */
 
 @media screen and (max-width: 768px) {
@@ -1521,15 +1533,22 @@ a:hover {
     }
   }
 }
-.list {
-  .item:nth-child(4n) {
+
+/* only 768 */
+
+@media screen and (min-width: 768px) and (max-width: 790px) {
+  .categories{
+    ul{
+      .lv2-sub-dropdown{
+        &.mobile{
+          left: unset;
+          right: calc(100% + 10px);
+        }
+      }
+    }
   }
 }
 
-.item.only-pc {
-  width: 100%;
-  flex: 1;
-}
 
 /* large pc */
 @media screen and (min-width: 1600px) {
