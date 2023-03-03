@@ -4,6 +4,438 @@
   font-family: "Inter", sans-serif;
 }
 
+.form {
+  margin-bottom: 45px;
+  /*  .input-wrap ~ .input-wrap {
+    margin-top: 20px;
+  } */
+}
+.form-content {
+  background: #f3f4f4;
+  padding-top: 38px;
+  padding-left: 11%;
+  padding-right: 11%;
+  border: 1px solid #8b919a;
+  border-radius: 10px;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0;
+}
+.form-header {
+  background: rgba(139, 198, 63, 0.75);
+  border-radius: 10px 10px 0px 0px;
+  height: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-header h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  color: rgba(28, 41, 13, 0.96);
+  text-align: center;
+}
+.form .large-col {
+  height: 160px;
+}
+.form .form-input-wrap ~ .form-input-wrap {
+  margin-top: 34px;
+}
+.form .title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  color: #000;
+}
+.form .title p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.form .row {
+  margin-left: 40px;
+}
+.form .input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form .label {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #303030;
+}
+.form .label span {
+  color: red;
+}
+.form input,
+.form textarea {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 14px 24px;
+  background: #F3F4F4;
+  border: 1px solid #8b919a;
+  border-radius: 10px;
+  color: #959ead;
+  transition: 0.2s ease;
+  outline: none;
+}
+.form textarea::placeholder {
+  color: #959ead;
+}
+.form input:focus {
+  border: 1px solid #de3618;
+}
+.form .captcha-wrap {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form .captcha-wrap .captcha-img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form .captcha-wrap .captcha-img-wrap .captcha-img {
+  max-width: 100%;
+  width: 100%;
+}
+.form .captcha-wrap a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  /* Xanh 1 */
+  color: #0184d3;
+}
+.form .captcha-wrap .speaker {
+  margin-left: 14px;
+  margin-right: 20px;
+  width: 31px;
+}
+.form .form-register {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.form .form-register .title {
+  margin-bottom: 0;
+}
+.form .form-register .register-wrap {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.form .form-register .register-wrap .box {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.form .form-register .register-wrap .box input {
+  cursor: pointer;
+  width: 18.5px;
+  height: 18.5px;
+}
+.form .form-register .register-wrap .box p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  /* identical to box height, or 160% */
+  /* black */
+  color: #303030;
+  white-space: nowrap;
+}
+.form .row-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+.form .row-title .line {
+  width: 90%;
+  height: 2px;
+  background: linear-gradient(90deg, #488a26 0%, #cfe8b0 100%);
+}
+.form .row-title ~ .input-wrap ~ .input-wrap {
+  margin-top: 20px;
+}
+.form .terms {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.form .terms h2 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  color: #000;
+}
+.form .terms ul {
+  margin-left: 40px;
+  margin-top: 10px;
+  list-style: disc !important;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form .terms ul li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  list-style-type: disc;
+  display: list-item;
+  color: #000000;
+}
+.form .terms ul li p {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+}
+.form .terms ul a {
+  color: #0184d3;
+}
+.form .submit-wrap {
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.form .submit-wrap .submit-btn {
+  cursor: pointer;
+  padding: 12px 27px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  /* identical to box height, or 160% */
+  /* white */
+  background: #395319;
+  border-radius: 8px;
+  color: #ffffff;
+}
+.form .submit-wrap .log-in-btn {
+  /* Background/1 */
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 11px 34px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #303030;
+}
+
+.login .form-content {
+  max-width: 690px;
+  background-color: #fff;
+  border: none;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.login .form .row-title {
+  text-align: center;
+  font-size: 28px;
+}
+.login .form .row-title .line {
+  width: 110%;
+  margin-top: 8px;
+  background: linear-gradient(90deg, #ffffff 0%, #8bc63f 20%, #8bc63f 40%, #8bc63f 60%, #8bc63f 80%, #ffffff 100%);
+  height: 6px;
+}
+.login .form .input-wrap {
+  max-width: 590px;
+}
+.login .form .forget {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+.login .form .submit-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.login .form .login-btn {
+  padding: 12px 32px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  /* identical to box height, or 160% */
+  /* white */
+  color: #ffffff;
+  /* Xanh 0 */
+  background: #395319;
+  border-radius: 8px;
+}
+.login .form .register-btn {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  /* identical to box height, or 160% */
+  /* Neutral/1 */
+  color: #303030;
+  background: #F3F4F4;
+  border-radius: 6px;
+  padding: 12px 32px;
+}
+
+/* mobile */
+@media screen and (max-width: 767.98px) {
+  .form-header {
+    height: 70px;
+  }
+  .form-header h1 {
+    font-size: 22px;
+  }
+  .form .title {
+    font-size: 20px;
+  }
+  .form .title p {
+    font-size: 14px;
+  }
+  .form .large-col {
+    height: 120px;
+  }
+  .form .form-register {
+    flex-direction: column;
+  }
+  .form .form-register .register-wrap .box p {
+    font-size: 16px;
+  }
+  .form .label {
+    font-size: 16px;
+  }
+  .form-content {
+    padding: 30px 15px;
+  }
+  .form input {
+    font-size: 14px;
+    width: 100%;
+  }
+  .form .row {
+    margin-left: 12px;
+  }
+  .form .captcha-wrap .captcha-img-wrap {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+  }
+  .form .terms h2 {
+    font-size: 19px;
+  }
+  .form .terms ul li {
+    font-size: 12px;
+  }
+  .form .submit-wrap {
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .form .submit-wrap .submit-btn,
+.form .submit-wrap .log-in-btn {
+    font-size: 13px;
+  }
+  .form .submit-wrap .submit-btn {
+    padding: 5px 10px;
+  }
+  .form .submit-wrap .log-in-btn {
+    padding: 5px 10px;
+  }
+}
+/* only 786 */
+@media screen and (min-width: 768px) and (max-width: 1023.99px) {
+  .form-header {
+    height: 80px;
+  }
+  .form-content {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .form .large-col {
+    height: 130px;
+  }
+  .form .row-title {
+    font-size: 18px;
+  }
+  .form .terms h2 {
+    font-size: 20px;
+  }
+  .form .submit-wrap .submit-btn,
+.form .submit-wrap .log-in-btn {
+    font-size: 16px;
+  }
+  .form .label {
+    font-size: 16px;
+  }
+  .form .title {
+    font-size: 18px;
+  }
+  .form input {
+    font-size: 15px;
+  }
+}
+/* tablet */
+/* only 1024 */
+@media screen and (min-width: 1024px) and (max-width: 1025px) {
+  .form .label {
+    font-size: 14px;
+  }
+  .form input {
+    font-size: 12px;
+  }
+  .form .title {
+    font-size: 18px;
+  }
+  .form .title p {
+    font-size: 14px;
+  }
+  .form .row-title {
+    font-size: 16px;
+  }
+  .form .terms h2 {
+    font-size: 18px;
+  }
+  .form .submit-wrap .submit-btn,
+.form .submit-wrap .log-in-btn {
+    font-size: 18px;
+  }
+}
+/* small pc */
+/* middle pc */
+@media screen and (min-width: 1300px) and (max-width: 1500px) {
+  .form .large-col {
+    height: 140px;
+  }
+  .form-header {
+    height: 95px;
+  }
+  .form-header h1 {
+    font-size: 26px;
+  }
+  .form .label {
+    font-size: 18px;
+  }
+  .form input {
+    font-size: 14px;
+  }
+  .form .title {
+    font-size: 20px;
+  }
+  .form .title p {
+    font-size: 15px;
+  }
+  .form .terms h2 {
+    font-size: 20px;
+  }
+}
 ul,
 h1,
 h2,

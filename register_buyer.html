@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dc700a75c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/dc700a75c1.css"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
+  <body>
+    <div class="wrapper register-buyer">
+      <div class="pre-header">
+        <div class="container-al">
+          <div class="pre-header-contact">
+            <p class="text">Sàn thương mại điện tử các sản phẩm từ tre</p>
+            <p class="text">
+              <img src="./assets/img/Iconspace_Call_25px.svg" alt="" />
+              Liên hệ: 0123456789
+            </p>
+          </div>
+
+          <div class="select-language-btn">
+            <div class="text">
+              <img src="./assets/img/google.svg" alt="" />
+              Select language
+            </div>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+
+      <header class="header">
+        <div class="container-al">
+          <div class="logo">
+            <img src="./assets/img/logo-full.png" alt="" />
+          </div>
+          <div class="search-bar">
+            <input
+              type="text"
+              id="header-search"
+              placeholder="Tìm kiếm sản phẩm"
+            />
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="btns-wrap">
+            <div class="cart-btn">
+              <img src="./assets/img/cart-2.svg" alt="" />
+            </div>
+            <a href="#" class="sign-in-btn"> Đăng nhập </a>
+            <a href="#" class="sign-up-btn"> Đăng ký </a>
+          </div>
+        </div>
+      </header>
+      <div class="mobile-overlay"></div>
+      <div class="mobile-categories">
+        <div class="container-al">
+          <ul class="mobile-categories-list">
+            <li><span>Trang chủ</span></li>
+            <li class="dropdown" aria-controls="sd-1" aria-expanded="true">
+              <span> Sản phẩm <i class="fa-solid fa-chevron-down"></i> </span>
+              <ul class="sub-dropdown" id="sd-1">
+                <li>1 Hello world</li>
+                <li>2 Hello world</li>
+                <li>3 Hello world</li>
+              </ul>
+            </li>
+            <li><span> Chào hàng </span></li>
+            <li><span> Doanh nghiệp </span></li>
+            <li class="dropdown">
+              <span> Tin tức <i class="fa-solid fa-chevron-down"></i> </span>
+              <ul class="sub-dropdown">
+                <li class="lv2-dropdown">
+                  <span>
+                    Giới thiệu tổng quan sàn<i
+                      class="fa-solid fa-chevron-down"
+                    ></i>
+                  </span>
+                  <ul class="lv2-sub-dropdown">
+                    <li>Thị trường quốc tế</li>
+                    <li>Mỹ</li>
+                    <li>Nhật Bản</li>
+                  </ul>
+                </li>
+                <li>2 Hello world</li>
+                <li>3 Hello world</li>
+              </ul>
+            </li>
+            <li><span> Quảng cáo </span></li>
+            <li class="dropdown">
+              <span>
+                Hướng dẫn mua bán<i class="fa-solid fa-chevron-down"></i>
+              </span>
+              <ul class="sub-dropdown">
+                <li class="lv2-dropdown">
+                  <span>
+                    1 Hello world<i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                  <ul class="lv2-sub-dropdown">
+                    <li>1 Hello world</li>
+                    <li>2 Hello world</li>
+                    <li>3 Hello world</li>
+                  </ul>
+                </li>
+                <li>2 Hello world</li>
+                <li>3 Hello world</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="btns-wrap only-mobile">
+        <div class="mobile-cate-btn">
+          <div class="container-al">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="cart-btn">
+          <img src="./assets/img/cart-2.svg" alt="" />
+        </div>
+        <a href="#" class="sign-in-btn"> Đăng nhập </a>
+        <a href="#" class="sign-up-btn"> Đăng ký </a>
+      </div>
+      <div class="categories">
+        <div class="container-al">
+          <ul class="categories-list">
+            <li><span> Trang chủ </span></li>
+
+            <li class="dropdown">
+              <span> Sản phẩm <i class="fa-solid fa-chevron-down"></i> </span>
+              <ul class="sub-dropdown">
+                <li class="line">1 Hello world 1 Hello world</li>
+
+                <li class="line">2 Hello world</li>
+
+                <li class="line">3 Hello world</li>
+              </ul>
+            </li>
+            <li><span> Chào hàng </span></li>
+
+            <li><span> Doanh nghiệp </span></li>
+
+            <li class="dropdown">
+              <span> Tin tức <i class="fa-solid fa-chevron-down"></i> </span>
+              <ul class="sub-dropdown">
+                <li class="lv2-dropdown line">
+                  <span>
+                    Giới thiệu tổng quan sàn<i
+                      class="fa-solid fa-chevron-down"
+                    ></i>
+                  </span>
+                  <ul class="lv2-sub-dropdown">
+                    <li class="line">Thông thị trường quốc tế</li>
+
+                    <li class="line">Mỹ</li>
+
+                    <li class="line">
+                      Nhật Bả
+                      <nav></nav>
+                    </li>
+                  </ul>
+                </li>
+                <li class="line">2 Hello world</li>
+
+                <li class="line">3 Hello world</li>
+              </ul>
+            </li>
+            <li><span> Quảng cáo </span></li>
+
+            <li class="dropdown">
+              <span>
+                Hướng dẫn mua bán<i class="fa-solid fa-chevron-down"></i>
+              </span>
+              <ul class="sub-dropdown">
+                <li class="lv2-dropdown">
+                  <span class="line">
+                    1 Hello world <i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                  <ul class="lv2-sub-dropdown mobile">
+                    <li class="line">1 Hello world</li>
+                    <li class="line">2 Hello world</li>
+                    <li class="line">3 Hello world</li>
+                  </ul>
+                </li>
+                <li class="line">2 Hello world</li>
+                <li class="line">3 Hello world</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="form">
+        <div class="container-al">
+          <div class="form-header">
+            <h1>Đăng ký thành viên</h1>
+          </div>
+          <div class="form-content">
+            <div class="form-input-wrap">
+              <h2 class="title">Thông tin tài khoản</h2>
+              <div class="row col-lg-6 gx-3 gy-3">
+                <div class="input-wrap col-lg-12">
+                  <p class="label">Tên đăng nhập <span>*</span></p>
+                  <input type="text" placeholder="Nhập tên đăng nhập tại đây" />
+                </div>
+                <div class="input-wrap col-lg-12">
+                  <p class="label">Mật khẩu <span>*</span></p>
+                  <input type="text" placeholder="Nhập mật khẩu tại đây" />
+                </div>
+                <div class="input-wrap col-lg-12">
+                  <p class="label">Xác nhận mật khẩu <span>*</span></p>
+                  <input type="text" placeholder="Nhập xác mật khẩu tại đây" />
+                </div>
+                <div class="captcha-wrap col-lg-12">
+                  <div class="captcha-img-wrap">
+                    <img
+                      src="./assets/img/securimage_show 1.svg"
+                      class="captcha-img"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/img/speaker.svg"
+                      alt=""
+                      class="speaker"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Nhập mã xác nhận"
+                      class="captcha-input"
+                    />
+                  </div>
+
+                  <a href="#">Tải lại ảnh</a>
+                </div>
+              </div>
+            </div>
+            <div class="form-input-wrap form-register">
+              <div class="title">Đăng ký trở thành</div>
+              <div class="register-wrap">
+                <div class="box">
+                  <input type="checkbox" />
+                  <p>Người mua</p>
+                </div>
+                <div class="box">
+                  <input type="checkbox" />
+                  <p>Người bán</p>
+                </div>
+              </div>
+            </div>
+            <div class="form-input-wrap">
+              <h2 class="title">Thông tin tài khoản</h2>
+              <div class="row gx-3 gy-3">
+                <div class="input-wrap col-lg-6">
+                  <p class="label">Họ<span>*</span></p>
+                  <input type="text" placeholder="Nhập họ người mua tại đây" />
+                </div>
+                <div class="input-wrap col-lg-6">
+                  <p class="label">Tên <span>*</span></p>
+                  <input
+                    type="number"
+                    placeholder="Nhập tên người mua tại đây"
+                  />
+                </div>
+                <div class="input-wrap col-lg-6">
+                  <p class="label">Số điện thoại</p>
+                  <input
+                    type="text"
+                    placeholder="Nhập số điện thoại người mua tại đây"
+                  />
+                </div>
+                <div class="input-wrap col-lg-6">
+                  <p class="label">Email</p>
+                  <input
+                    type="text"
+                    placeholder="Nhập email người mua tại đây"
+                  />
+                </div>
+
+                <div class="input-wrap col-lg-12">
+                  <p class="label">Địa chỉ</p>
+                  <textarea class="large-col" type="text" title="Nhập địa chỉ người mua tại đây" placeholder="Nhập địa chỉ người mua tại đây"> 
+                  
+                      </textarea
+                  >
+                  
+                </div>
+                <div class="input-wrap col-lg-6">
+                    <p class="label">Tỉnh</p>
+                    <input
+                      type="text"
+                      placeholder="Nhập tỉnh thành người mua tại đây"
+                    />
+                  </div>
+                  <div class="input-wrap col-lg-6">
+                    <p class="label">Thành phố</p>
+                    <input
+                      type="text"
+                      placeholder="Nhập thành phố người mua tại đây"
+                    />
+                  </div>
+              </div>
+            </div>
+
+            <div class="terms">
+              <h2>
+                Khi Doanh nghiệp chọn nút "Tôi đồng ý.Tạo tài khoản của tôi."
+                tức là doanh nghiệp đã:
+              </h2>
+              <ul role="list">
+                <li>
+                  <p>
+                    Đồng ý các
+                    <a href="#">Điều khoản cam kết khi làm thành viên</a>
+                  </p>
+                </li>
+                <li>
+                  <p>Đồng ý các <a href="">Quy định sử dụng</a></p>
+                </li>
+                <li>
+                  Đồng ý nhận các thông tin về sản phẩm và dịch vụ từ trang web
+                  này
+                </li>
+              </ul>
+            </div>
+            <div class="submit-wrap">
+              <a class="submit-btn">Tôi đồng ý, tạo tài khoản của tôi</a>
+              <a class="log-in-btn">Đăng nhập</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container-al">
+          <div class="left flex-column d-flex">
+            <div class="logo-list">
+              <img src="./assets/img/logo-ref1.png" alt="" />
+              <img src="./assets/img/Oxfam_logo_vertical 1.png" alt="" />
+              <img src="./assets/img/logo-ref3.png" alt="" />
+              <img src="./assets/img/ft-vcci.png" alt="" />
+            </div>
+            <div class="d-flex align-items-center" style="gap: 10px">
+              <img src="./assets/img/logo2.png" class="logo-2" alt="" />
+              <p class="footer-text m-width">
+                Dự án Phát triển bền vững và toàn diện chuỗi giá trị nghêu và
+                tre tại Việt Nam
+              </p>
+            </div>
+            <div class="social-list">
+              <a href="">
+                <img src="./assets/img/mdi_instagram.svg" alt="" />
+              </a>
+              <a href=""
+                ><img src="./assets/img/ic_baseline-facebook.svg" alt=""
+              /></a>
+              <a href=""
+                ><img src="./assets/img/mdi_google-plus.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="right">
+            <div class="list">
+              <h2>Hướng dẫn mua bán</h2>
+              <ul>
+                <li><a class="footer-text">Hướng dẫn cho người mua</a></li>
+                <li>
+                  <a class="footer-text">Hướng dẫn cho người bán</a>
+                </li>
+                <li>
+                  <a class="footer-text">Bảo mật thông tin</a>
+                </li>
+              </ul>
+            </div>
+            <div class="list">
+              <h2>Viện Tin học Doanh nghiệp (VCCI-ITB)</h2>
+              <ul>
+                <li>
+                  <img src="./assets/img/map.svg" alt="" />
+                  <p class="footer-text">
+                    Số 9 Đào Duy Anh, Quận Đống Đa, TP Hà Nội
+                  </p>
+                </li>
+                <li>
+                  <img src="./assets/img/Phone.svg" alt="" />
+                  <p class="footer-text">Điện Thoại: 123-4567-890</p>
+                </li>
+                <li>
+                  <img src="./assets/img/Message.svg" alt="" />
+                  <p class="footer-text">Email: contact@itb.com.vn</p>
+                </li>
+              </ul>
+            </div>
+            <div class="returns">
+              <div class="returns-link">
+                <p class="text">Liên kết website</p>
+                <i class="fa-solid fa-chevron-down"></i>
+                <div class="option-list">
+                  <div class="option-item">Liên kết website</div>
+                  <div class="option-item">lorem1</div>
+                  <div class="option-item">lorem2</div>
+                </div>
+              </div>
+              <div class="returns-visit">
+                <p class="text">Lượt truy cập</p>
+                <p class="text number">7398898</p>
+              </div>
+              <div class="dangky-img-wrap">
+                <img src="./assets/img/dk.svg" alt="" class="dangky-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./assets/js/app.js"></script>
+</html>
