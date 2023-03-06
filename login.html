@@ -219,14 +219,14 @@
       </div>
       <div class="form">
         <div class="container-al">
-          <div class="form-content">
             <div class="row-title">
                 Đăng nhập vào tài khoản của bạn
                 <div class="line"></div>
             </div>
+          <div class="form-content">
             <div class="input-wrap">
-                <p class="label">Tên đăng nhập <span>*</span></p>
-                <input type="text" placeholder="Nhập tên đăng nhập của bạn tại đây">
+                <p class="label">Tên tài khoản <span>*</span></p>
+                <input type="text" placeholder="Nhập tên tài khoản của bạn tại đây">
             </div>
             <div class="input-wrap">
                 <p class="label">
@@ -241,7 +241,9 @@
                     class="captcha-img"
                     alt=""
                   />
-                  <img src="./assets/img/circle.svg" alt="">
+                  <a href="#">
+                    <img src="./assets/img/circle.svg" class="reload-img" alt="">
+                  </a>
                   <img
                     src="./assets/img/speaker.svg"
                     alt=""
@@ -254,12 +256,11 @@
                   />
                 </div>
 
-                <a href="#">Tải lại ảnh</a>
               </div>
             <div class="forget">
                 <a href="#">Quên mật khẩu</a>
                 <div class="save">
-                    <div class="checkbox"></div>
+                  <input type="checkbox">
                     <span>Lưu mật khẩu</span>
                 </div>
             </div>
